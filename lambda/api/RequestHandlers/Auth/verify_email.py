@@ -1,9 +1,11 @@
 from datetime import datetime
+import os
 import json
 from Models.HandlerPayload import HandlerPayload
 from Models import Challenge, User
 from pydantic import BaseModel
 from Lib import JWT
+from datetime import timedelta
 
 class VerifyEmailBody(BaseModel):
     challenge_id: str
@@ -13,7 +15,8 @@ class VerifyEmailResponse(BaseModel):
     success: bool
     message: str
     create_account_token: str | None = None
-    auth_token: str | None = None
+    access_token: str | None = None
+    refresh_token: str | None = None
 
 def handler(payload: HandlerPayload ) -> VerifyEmailResponse:
     """Handle the request to verify an email using a challenge.
@@ -82,7 +85,7 @@ Returns:
 
     if not user:
         # Generate the jwt token that will allow user to create an account
-        create_account_token = JWT.generate_jwt("my-super-secret-secret-no-one-can-guess", {
+        create_account_token = JWT.generate_jwt(os.getenv("JWT_SECRET"), {
             "verified_email": email
         })
         return VerifyEmailResponse(
@@ -91,22 +94,22 @@ Returns:
             create_account_token=create_account_token
         )
     
-    # Generate the auth token for the user
-    auth_token = JWT.generate_jwt("my-super-secret-secret-no-one-can-guess", {
+    # Generate the access and refresh tokens for the user
+    access_token = JWT.generate_jwt(os.getenv("JWT_SECRET"), {
         "user_id": user.id,
-        "email": user.email
-    })
+        "email": user.email,
+        "token_type": "access_token",
+    }, expires_in=timedelta(minutes=15))
+
+    refresh_token = JWT.generate_jwt(os.getenv("JWT_SECRET"), {
+        "user_id": user.id,
+        "email": user.email,
+        "token_type": "refresh_token",
+    }, expires_in=timedelta(days=365))
 
     return VerifyEmailResponse(
         success=True,
         message="Email verified successfully.",
-        auth_token=auth_token
+        access_token=access_token,
+        refresh_token=refresh_token
     )
-
-
-
-
-    
-
-        
-    

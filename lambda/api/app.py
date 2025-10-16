@@ -1,16 +1,24 @@
 import json
 import re
+import os
 from Models.HandlerPayload import HandlerPayload
+from Models import User
+from Lib import JWT
 from pydantic import BaseModel
 from AWS.APIGateway import APIGatewayResponse, create_api_gateway_response
 from AWS.Lambda import LambdaEvent
 from AWS import CloudWatchLogs, SecretsManager
 import RequestHandlers.Auth.send_email_verification
 import RequestHandlers.Auth.verify_email
+import RequestHandlers.Auth.refresh_token
 import RequestHandlers.Councils.councils_for_postcode
 import RequestHandlers.BinSystems.bin_systems_for_council
 import RequestHandlers.Users.create_user
+import RequestHandlers.Users.get_user
 
+
+# Load secrets
+SecretsManager.load_secrets_from_arn()
 
 # Handler registry
 handler_registry = {
@@ -26,6 +34,12 @@ handler_registry = {
             "public": True
         }
     },
+    "/refresh-token": {
+        "POST": {
+            "handler": RequestHandlers.Auth.refresh_token.handler,
+            "public": True
+        }
+    },
     "/councils-for-postcode/{postcode}": {
         "GET": {
             "handler": RequestHandlers.Councils.councils_for_postcode.handler,
@@ -38,10 +52,16 @@ handler_registry = {
             "public": True
         }
     },
-    "/create-user": {
+    "/create-account": {
         "POST": {
             "handler": RequestHandlers.Users.create_user.handler,
             "public": True
+        }
+    },
+    "/user": {
+        "GET": {
+            "handler": RequestHandlers.Users.get_user.handler,
+            "public": False
         }
     }
 }
@@ -83,6 +103,12 @@ def lambda_handler(event: dict, context) -> APIGatewayResponse:
         lambda_event = LambdaEvent(**event)
         logger.info(f"Request Event: {json.dumps(lambda_event.model_dump())}")
 
+        # Create the HandlerPayload
+        payload = HandlerPayload(
+            lambda_event=lambda_event,
+            logger=logger
+        )
+
         # Get the request details
         request_path: str = lambda_event.path
         request_method: str = lambda_event.httpMethod
@@ -100,13 +126,24 @@ def lambda_handler(event: dict, context) -> APIGatewayResponse:
             access_token = lambda_event.headers.get("Authorization")
             if (access_token == None):
                 raise Exception("No authentication token provided")
-            # TODO: validate the access token. 
+            access_token = access_token.replace("Bearer ", "")
+            try:
+                token_contents = JWT.extract_jwt_contents(os.getenv("JWT_SECRET"), access_token)
+                # Enforce access token type
+                if token_contents.get("token_type") != "access_token":
+                    raise Exception("Invalid token type for this endpoint", 401)
+                user_id = token_contents.get("user_id")
+                user = User.get_user_with_id(user_id)
+                if not user:
+                    raise Exception("User not found", 401)
+                payload.user = user
+                logger.info(f"Authenticated user {user.email} ({user.id})")
+            except Exception as e:
+                logger.error(f"Invalid or expired authentication token: {e}")
+                raise Exception("Invalid or expired authentication token", 401)
             
         # Call the handler
-        response: BaseModel = handler(HandlerPayload(
-            lambda_event=lambda_event,
-            logger=logger
-        ))
+        response: BaseModel = handler(payload)
         
         # Get return content based on return type
         return_result = None

@@ -8,15 +8,15 @@ USERS_TABLE = "users"
 class User(BaseModel):
     id: str
     email: str
-    counsil_id: str
+    council_id: str
     bin_system_id: str
-    points: float
+    points: int
     created_at: int
     updated_at: int
 
 class CreateUserParams(BaseModel):
     email: str
-    counsil_id: str
+    council_id: str
     bin_system_id: str
 
 def create_user(params: CreateUserParams) -> User:
@@ -28,9 +28,9 @@ def create_user(params: CreateUserParams) -> User:
     user = User(
         id=user_id,
         email=params.email,
-        counsil_id=params.counsil_id,
+        council_id=params.council_id,
         bin_system_id=params.bin_system_id,
-        points=0.0,
+        points=0,
         created_at=now,
         updated_at=now
     )
@@ -40,19 +40,6 @@ def create_user(params: CreateUserParams) -> User:
     )
     return user
 
-def get_user(user_id: str) -> User | None:
-    """
-    Fetch a user by their ID.
-    """
-    response = get_item(
-        table_name="Users",
-        primary_key_name="id",
-        key=user_id
-    )
-    if not response:
-        return None
-    return User(**response)
-
 def get_user_with_email(email: str) -> User | None:
     """
     Fetch a user by their email
@@ -61,6 +48,19 @@ def get_user_with_email(email: str) -> User | None:
     if not index_items:
         return None
     return User(**index_items[0])
+
+def get_user_with_id(user_id: str) -> User | None:
+    """
+    Fetch a user by their ID
+    """
+    response = get_item(
+        table_name=USERS_TABLE,
+        primary_key_name="id",
+        key=user_id
+    )
+    if not response:
+        return None
+    return User(**response)
     
 
 

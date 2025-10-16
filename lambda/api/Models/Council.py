@@ -9,6 +9,19 @@ class Council(BaseModel):
     mapId: str
     name: str
 
+def get_council_by_id(council_id: str) -> Council | None:
+    """
+    Fetch a council by its ID.
+    """
+    council_data = get_item(
+        table_name=COUNCILS_TABLE,
+        primary_key_name="id",
+        key=council_id
+    )
+    if not council_data:
+        return None
+    return Council(**council_data)
+
 def get_councils_for_postcode(postcode: str) -> list[Council]:
     """
     Fetch councils associated with a given postcode.
@@ -24,12 +37,8 @@ def get_councils_for_postcode(postcode: str) -> list[Council]:
     council_ids = response['council_ids']
     councils = []
     for council_id in council_ids:
-        council_data = get_item(
-            table_name=COUNCILS_TABLE,
-            primary_key_name="id",
-            key=council_id
-        )
-        if council_data:
-            councils.append(Council(**council_data))
+        council = get_council_by_id(council_id)
+        if council:
+            councils.append(council)
     
     return councils

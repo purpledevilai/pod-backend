@@ -1,9 +1,11 @@
 import json
-import secrets
+import os
 from Models.HandlerPayload import HandlerPayload
 from Models import User
 from pydantic import BaseModel
 from Lib import JWT
+from datetime import timedelta
+
 
 class CreateUserBody(BaseModel):
     create_account_token: str
@@ -12,7 +14,7 @@ class CreateUserBody(BaseModel):
 
 class CreateUserResponse(BaseModel):
     user: User.User
-    auth_token: str
+    access_token: str
     refresh_token: str
 
 def handler(payload: HandlerPayload ) -> CreateUserResponse:
@@ -36,7 +38,7 @@ def handler(payload: HandlerPayload ) -> CreateUserResponse:
     # Verify the create account token
     try:
         token_data = JWT.extract_jwt_contents(os.environ["JWT_SECRET"], body.create_account_token)
-        email = token_data.get("email")
+        email = token_data.get("verified_email")
         if not email:
             raise ValueError("Invalid token: email not found")
     except Exception as e:
@@ -51,19 +53,28 @@ def handler(payload: HandlerPayload ) -> CreateUserResponse:
     # Create the new user
     user_params = User.CreateUserParams(
         email=email,
-        counsil_id=body.council_id,
+        council_id=body.council_id,
         bin_system_id=body.bin_system_id
     )
     new_user = User.create_user(user_params)
     logger.info(f"User created with ID {new_user.id}")
 
     # Generate authentication and refresh tokens
-    auth_token = JWT.create_token({"user_id": new_user.id}, expires_in=3600)  # 1 hour expiry
-    refresh_token = secrets.token_urlsafe(32)  # Secure random refresh token
+    access_token = JWT.generate_jwt(os.getenv("JWT_SECRET"), {
+        "user_id": new_user.id,
+        "email": new_user.email,
+        "token_type": "access_token",
+    }, expires_in=timedelta(hours=8))
+
+    refresh_token = JWT.generate_jwt(os.getenv("JWT_SECRET"), {
+        "user_id": new_user.id,
+        "email": new_user.email,
+        "token_type": "refresh_token",
+    }, expires_in=timedelta(days=365))
 
     # Return the response
     return CreateUserResponse(
         user=new_user,
-        auth_token=auth_token,
+        access_token=access_token,
         refresh_token=refresh_token
     )

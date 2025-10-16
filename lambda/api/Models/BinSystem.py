@@ -102,6 +102,19 @@ class CouncilToBinSystem(BaseModel):
     bin_systems: list[SimpleBinSystem]
     council_name: str
 
+def get_bin_system_by_id(bin_system_id: str) -> BinSystem | None:
+    """
+    Fetch a bin system by its ID.
+    """
+    bin_system_data = get_item(
+        table_name=BIN_SYSTEMS_TABLE,
+        primary_key_name="id",
+        key=bin_system_id
+    )
+    if not bin_system_data:
+        return None
+    return BinSystem(**bin_system_data)
+
 def get_bin_systems_for_council(council_id: str) -> list[BinSystem]:
     """
     Fetch bin systems associated with a given council ID.
@@ -117,13 +130,9 @@ def get_bin_systems_for_council(council_id: str) -> list[BinSystem]:
     council_to_bin_system = CouncilToBinSystem(**response)
     bin_systems = []
     for simple_bin_system in council_to_bin_system.bin_systems:
-        bin_system_data = get_item(
-            table_name=BIN_SYSTEMS_TABLE,
-            primary_key_name="id",
-            key=simple_bin_system.id
-        )
-        if bin_system_data:
-            bin_systems.append(BinSystem(**bin_system_data))
+        bin_system = get_bin_system_by_id(simple_bin_system.id)
+        if bin_system:
+            bin_systems.append(bin_system)
     
     return bin_systems
 
