@@ -45,7 +45,7 @@ def handler(payload: HandlerPayload ) -> SendEmailVerificationResponse:
 
     # Send the email with the code
     SES.send_email(
-        from_email="codes@email.ajentify.com",
+        from_email="codes@podrecycling.com",
         to_email=email,
         subject="Your Email Verification Code",
         body_text=f"Your verification code is: {code}",
