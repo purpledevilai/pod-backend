@@ -1,0 +1,2628 @@
+{
+    "5": {
+        "id": "5",
+        "bins": [
+            {
+                "id": "5-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "5-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "5-lime-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "4": {
+        "id": "4",
+        "bins": [
+            {
+                "id": "4-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "4-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "56": {
+        "id": "56",
+        "bins": [
+            {
+                "id": "56-no-bin-system-no-kerbside-collection",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "No Bin System",
+                "type": "No Kerbside Collection",
+                "extras": []
+            }
+        ]
+    },
+    "11": {
+        "id": "11",
+        "bins": [
+            {
+                "id": "11-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "11-green-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "19": {
+        "id": "19",
+        "bins": [
+            {
+                "id": "19-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "19-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "19-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "15": {
+        "id": "15",
+        "bins": [
+            {
+                "id": "15-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "15-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "15-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "7": {
+        "id": "7",
+        "bins": [
+            {
+                "id": "7-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "7-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "1": {
+        "id": "1",
+        "bins": [
+            {
+                "id": "1-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "1-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "8": {
+        "id": "8",
+        "bins": [
+            {
+                "id": "8-red-garbage",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            }
+        ]
+    },
+    "103": {
+        "id": "103",
+        "bins": [
+            {
+                "id": "103-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "103-green-garbage",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            }
+        ]
+    },
+    "23": {
+        "id": "23",
+        "bins": [
+            {
+                "id": "23-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "23-yellow-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "23-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "23-lime-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "96": {
+        "id": "96",
+        "bins": [
+            {
+                "id": "96-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "96-yellow-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "96-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "14": {
+        "id": "14",
+        "bins": [
+            {
+                "id": "14-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "14-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "14-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "13": {
+        "id": "13",
+        "bins": [
+            {
+                "id": "13-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "13-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "13-lime-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "108": {
+        "id": "108",
+        "bins": [
+            {
+                "id": "108-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "108-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": [
+                    "curby"
+                ],
+                "message": "Please place in your Curby bag and dispose in your recycling bin"
+            },
+            {
+                "id": "108-lime-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "9": {
+        "id": "9",
+        "bins": [
+            {
+                "id": "9-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "9-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "9-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "25": {
+        "id": "25",
+        "bins": [
+            {
+                "id": "25-blue-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Blue",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "25-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "25-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "2": {
+        "id": "2",
+        "bins": [
+            {
+                "id": "2-green-garbage",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            }
+        ]
+    },
+    "21": {
+        "id": "21",
+        "bins": [
+            {
+                "id": "21-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "21-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "3": {
+        "id": "3",
+        "bins": [
+            {
+                "id": "3-green-garbage",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            }
+        ]
+    },
+    "27": {
+        "id": "27",
+        "bins": [
+            {
+                "id": "27-dark-grey-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Dark Grey",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "27-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "67": {
+        "id": "67",
+        "bins": [
+            {
+                "id": "67-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "67-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "98": {
+        "id": "98",
+        "bins": [
+            {
+                "id": "98-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "98-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "98-maroon-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "30": {
+        "id": "30",
+        "bins": [
+            {
+                "id": "30-lime-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Lime Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "30-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "75": {
+        "id": "75",
+        "bins": [
+            {
+                "id": "75-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "75-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "102": {
+        "id": "102",
+        "bins": [
+            {
+                "id": "102-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": true,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "102-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "24": {
+        "id": "24",
+        "bins": [
+            {
+                "id": "24-blue-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Blue",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "24-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "24-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "6": {
+        "id": "6",
+        "bins": [
+            {
+                "id": "6-red-garbage",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            }
+        ]
+    },
+    "38": {
+        "id": "38",
+        "bins": [
+            {
+                "id": "38-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "38-green-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "38-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "59": {
+        "id": "59",
+        "bins": [
+            {
+                "id": "59-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "59-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "59-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "40": {
+        "id": "40",
+        "bins": [
+            {
+                "id": "40-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "40-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "40-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "92": {
+        "id": "92",
+        "bins": [
+            {
+                "id": "92-blue-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Blue",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "92-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "18": {
+        "id": "18",
+        "bins": [
+            {
+                "id": "18-blue-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Blue",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "18-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "60": {
+        "id": "60",
+        "bins": [
+            {
+                "id": "60-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "60-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "60-purple-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Purple",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "60-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "71": {
+        "id": "71",
+        "bins": [
+            {
+                "id": "71-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "71-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "62": {
+        "id": "62",
+        "bins": [
+            {
+                "id": "62-lime-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Lime Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "62-green-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "62-maroon-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "87": {
+        "id": "87",
+        "bins": [
+            {
+                "id": "87-green-garbage",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "87-maroon-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "31": {
+        "id": "31",
+        "bins": [
+            {
+                "id": "31-yellow-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Yellow",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "31-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "31-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "91": {
+        "id": "91",
+        "bins": [
+            {
+                "id": "91-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "91-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "90": {
+        "id": "90",
+        "bins": [
+            {
+                "id": "90-yellow-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Yellow",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "90-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "70": {
+        "id": "70",
+        "bins": [
+            {
+                "id": "70-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "70-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "70-purple-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Purple",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "70-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "78": {
+        "id": "78",
+        "bins": [
+            {
+                "id": "78-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "78-green-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "78-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "46": {
+        "id": "46",
+        "bins": [
+            {
+                "id": "46-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "46-yellow-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "46-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "100": {
+        "id": "100",
+        "bins": [
+            {
+                "id": "100-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "100-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "100-purple-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Purple",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "100-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "34": {
+        "id": "34",
+        "bins": [
+            {
+                "id": "34-purple-garbage",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Purple",
+                "type": "Garbage",
+                "extras": []
+            }
+        ]
+    },
+    "84": {
+        "id": "84",
+        "bins": [
+            {
+                "id": "84-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "84-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "84-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Garden Waste",
+                "extras": []
+            },
+            {
+                "id": "84-maroon-food-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food Waste",
+                "extras": []
+            }
+        ]
+    },
+    "101": {
+        "id": "101",
+        "bins": [
+            {
+                "id": "101-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "101-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "101-maroon-food-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food Waste",
+                "extras": []
+            }
+        ]
+    },
+    "89": {
+        "id": "89",
+        "bins": [
+            {
+                "id": "89-dark-grey-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Dark Grey",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "89-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "89-lime-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "94": {
+        "id": "94",
+        "bins": [
+            {
+                "id": "94-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "94-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "94-purple-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Purple",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "93": {
+        "id": "93",
+        "bins": [
+            {
+                "id": "93-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "93-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "93-purple-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Purple",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "95": {
+        "id": "95",
+        "bins": [
+            {
+                "id": "95-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "95-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "95-lime-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "45": {
+        "id": "45",
+        "bins": [
+            {
+                "id": "45-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "45-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "39": {
+        "id": "39",
+        "bins": [
+            {
+                "id": "39-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "39-maroon-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "39-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "80": {
+        "id": "80",
+        "bins": [
+            {
+                "id": "80-byo-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "BYO",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "80-clear/red-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Red",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "80-clear/green-food-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Green",
+                "type": "Food Waste",
+                "extras": []
+            }
+        ]
+    },
+    "33": {
+        "id": "33",
+        "bins": [
+            {
+                "id": "33-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "33-black-crate-no-lid-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Black Crate no lid",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "33-black-crate-with-lid-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Black Crate with lid",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "33-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "43": {
+        "id": "43",
+        "bins": [
+            {
+                "id": "43-blue-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Blue",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "43-green-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "17": {
+        "id": "17",
+        "bins": [
+            {
+                "id": "17-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "17-yellow-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "17-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "17-lime-green-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "82": {
+        "id": "82",
+        "bins": [
+            {
+                "id": "82-red-bag-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red bag",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "82-clear/black-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Black",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "82-clear-food-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear",
+                "type": "Food Waste",
+                "extras": []
+            }
+        ]
+    },
+    "37": {
+        "id": "37",
+        "bins": [
+            {
+                "id": "37-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "37-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "37-maroon-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "97": {
+        "id": "97",
+        "bins": [
+            {
+                "id": "97-green-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Green",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "97-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "97-maroon-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "99": {
+        "id": "99",
+        "bins": [
+            {
+                "id": "99-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "99-blue-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Blue",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "99-maroon-food-and-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Maroon",
+                "type": "Food and Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "72": {
+        "id": "72",
+        "bins": [
+            {
+                "id": "72-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "72-green-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "107": {
+        "id": "107",
+        "bins": [
+            {
+                "id": "107-red-bag-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red bag",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "107-clear/black-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Black",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "107-purple-bag-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Purple bag",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "107-clear/green-food-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Green",
+                "type": "Food Waste",
+                "extras": []
+            }
+        ]
+    },
+    "79": {
+        "id": "79",
+        "bins": [
+            {
+                "id": "79-red-bag-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red bag",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "79-clear/black-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Black",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "79-clear/green-food-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Green",
+                "type": "Food Waste",
+                "extras": []
+            }
+        ]
+    },
+    "83": {
+        "id": "83",
+        "bins": [
+            {
+                "id": "83-red-bag-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red bag",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "83-clear/black-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear/Black",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    },
+    "26": {
+        "id": "26",
+        "bins": [
+            {
+                "id": "26-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "26-yellow-recycling",
+                "acceptsCardboard": false,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "26-green-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Green",
+                "type": "Recycling",
+                "extras": []
+            },
+            {
+                "id": "26-lime-green-garden-waste",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": false,
+                "appearance": "Lime Green",
+                "type": "Garden Waste",
+                "extras": []
+            }
+        ]
+    },
+    "81": {
+        "id": "81",
+        "bins": [
+            {
+                "id": "81-byo-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": false,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "BYO",
+                "type": "Garbage",
+                "extras": []
+            },
+            {
+                "id": "81-clear-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Clear",
+                "type": "Recycling",
+                "extras": []
+            }
+        ]
+    }
+}

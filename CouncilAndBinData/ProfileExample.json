@@ -1,0 +1,43 @@
+{
+    "id": "fa9c9e63-7246-4430-b8a7-ac0a37afdb26",
+    "email": "keanu.interone@gmail.com",
+    "council": {
+        "id": "443",
+        "mapId": "198",
+        "name": "City of Stonnington"
+    },
+    "bin_system": {
+        "id": "1",
+        "bins": [
+            {
+                "id": "1-red-garbage",
+                "acceptsCardboard": false,
+                "acceptsContainers": false,
+                "acceptsFood": true,
+                "acceptsGarbage": true,
+                "acceptsGarden": true,
+                "acceptsGlass": false,
+                "acceptsSoftPlastics": true,
+                "appearance": "Red",
+                "extras": [],
+                "type": "Garbage"
+            },
+            {
+                "id": "1-yellow-recycling",
+                "acceptsCardboard": true,
+                "acceptsContainers": true,
+                "acceptsFood": false,
+                "acceptsGarbage": false,
+                "acceptsGarden": false,
+                "acceptsGlass": true,
+                "acceptsSoftPlastics": false,
+                "appearance": "Yellow",
+                "extras": [],
+                "type": "Recycling"
+            }
+        ]
+    },
+    "points": 0,
+    "created_at": 1773129694,
+    "updated_at": 1773129694
+}

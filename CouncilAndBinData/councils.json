@@ -1,0 +1,2717 @@
+{
+    "388": {
+        "id": "388",
+        "name": "Sutherland Shire Council",
+        "mapId": "770"
+    },
+    "128": {
+        "id": "128",
+        "name": "Regional Council of Goyder",
+        "mapId": "601"
+    },
+    "233": {
+        "id": "233",
+        "name": "City of Perth",
+        "mapId": "187"
+    },
+    "277": {
+        "id": "277",
+        "name": "City of Vincent",
+        "mapId": "205"
+    },
+    "205": {
+        "id": "205",
+        "name": "City of South Perth",
+        "mapId": "196"
+    },
+    "83": {
+        "id": "83",
+        "name": "Kangaroo Island Council",
+        "mapId": "418"
+    },
+    "129": {
+        "id": "129",
+        "name": "District Council of Lower Eyre Peninsula",
+        "mapId": "269"
+    },
+    "475": {
+        "id": "475",
+        "name": "Swan Hill Rural City Council",
+        "mapId": "771"
+    },
+    "18": {
+        "id": "18",
+        "name": "Cassowary Coast Regional Council",
+        "mapId": "122"
+    },
+    "293": {
+        "id": "293",
+        "name": "City of Darwin",
+        "mapId": "157"
+    },
+    "463": {
+        "id": "463",
+        "name": "Greater Shepparton City Council",
+        "mapId": "357"
+    },
+    "438": {
+        "id": "438",
+        "name": "Banyule City Council",
+        "mapId": "46"
+    },
+    "390": {
+        "id": "390",
+        "name": "Ku-ring-gai Council",
+        "mapId": "432"
+    },
+    "353": {
+        "id": "353",
+        "name": "Blue Mountains City Council",
+        "mapId": "78"
+    },
+    "95": {
+        "id": "95",
+        "name": "District Council of Karoonda East Murray",
+        "mapId": "267"
+    },
+    "124": {
+        "id": "124",
+        "name": "District Council of Loxton Waikerie",
+        "mapId": "270"
+    },
+    "513": {
+        "id": "513",
+        "name": "Tasman Council",
+        "mapId": "775"
+    },
+    "244": {
+        "id": "244",
+        "name": "Shire of Mount Magnet",
+        "mapId": "696"
+    },
+    "315": {
+        "id": "315",
+        "name": "Lake Macquarie City Council",
+        "mapId": "436"
+    },
+    "149": {
+        "id": "149",
+        "name": "Shire of Donnybrook-Balingup",
+        "mapId": "665"
+    },
+    "163": {
+        "id": "163",
+        "name": "Shire of Boyup Brook",
+        "mapId": "639"
+    },
+    "118": {
+        "id": "118",
+        "name": "District Council of Mount Remarkable",
+        "mapId": "271"
+    },
+    "113": {
+        "id": "113",
+        "name": "Northern Areas Council",
+        "mapId": "542"
+    },
+    "321": {
+        "id": "321",
+        "name": "Maitland City Council",
+        "mapId": "466"
+    },
+    "342": {
+        "id": "342",
+        "name": "Cessnock City Council",
+        "mapId": "133"
+    },
+    "327": {
+        "id": "327",
+        "name": "Port Stephens Council",
+        "mapId": "584"
+    },
+    "340": {
+        "id": "340",
+        "name": "City of Newcastle",
+        "mapId": "182"
+    },
+    "212": {
+        "id": "212",
+        "name": "Shire of Augusta Margaret River",
+        "mapId": "636"
+    },
+    "479": {
+        "id": "479",
+        "name": "Nillumbik Shire Council",
+        "mapId": "534"
+    },
+    "69": {
+        "id": "69",
+        "name": "City of Gold Coast",
+        "mapId": "159"
+    },
+    "406": {
+        "id": "406",
+        "name": "Bayside Council",
+        "mapId": "58"
+    },
+    "311": {
+        "id": "311",
+        "name": "Georges River Council",
+        "mapId": "333"
+    },
+    "120": {
+        "id": "120",
+        "name": "Yorke Peninsula Council",
+        "mapId": "885"
+    },
+    "48": {
+        "id": "48",
+        "name": "Western Downs Regional Council",
+        "mapId": "858"
+    },
+    "442": {
+        "id": "442",
+        "name": "Melton City Council",
+        "mapId": "479"
+    },
+    "334": {
+        "id": "334",
+        "name": "The Hills Shire Council",
+        "mapId": "788"
+    },
+    "427": {
+        "id": "427",
+        "name": "Hornsby Shire Council",
+        "mapId": "382"
+    },
+    "473": {
+        "id": "473",
+        "name": "City of Boroondara",
+        "mapId": "147"
+    },
+    "81": {
+        "id": "81",
+        "name": "City of Marion",
+        "mapId": "175"
+    },
+    "105": {
+        "id": "105",
+        "name": "City of Mitcham",
+        "mapId": "178"
+    },
+    "78": {
+        "id": "78",
+        "name": "City of Tea Tree Gully",
+        "mapId": "202"
+    },
+    "424": {
+        "id": "424",
+        "name": "Warrumbungle Shire Council",
+        "mapId": "846"
+    },
+    "79": {
+        "id": "79",
+        "name": "Wattle Range Council",
+        "mapId": "848"
+    },
+    "119": {
+        "id": "119",
+        "name": "District Council of Robe",
+        "mapId": "274"
+    },
+    "523": {
+        "id": "523",
+        "name": "Dorset Council",
+        "mapId": "282"
+    },
+    "459": {
+        "id": "459",
+        "name": "City of Greater Dandenong",
+        "mapId": "162"
+    },
+    "172": {
+        "id": "172",
+        "name": "Shire of West Arthur",
+        "mapId": "727"
+    },
+    "509": {
+        "id": "509",
+        "name": "Australian Capital Territory",
+        "mapId": "30"
+    },
+    "23": {
+        "id": "23",
+        "name": "Townsville City Council",
+        "mapId": "806"
+    },
+    "528": {
+        "id": "528",
+        "name": "Clarence City Council",
+        "mapId": "214"
+    },
+    "58": {
+        "id": "58",
+        "name": "Logan City Council",
+        "mapId": "458"
+    },
+    "468": {
+        "id": "468",
+        "name": "Campaspe Shire Council",
+        "mapId": "108"
+    },
+    "489": {
+        "id": "489",
+        "name": "City of Greater Bendigo",
+        "mapId": "161"
+    },
+    "9": {
+        "id": "9",
+        "name": "Bundaberg Regional Council",
+        "mapId": "96"
+    },
+    "181": {
+        "id": "181",
+        "name": "Shire of Yilgarn",
+        "mapId": "737"
+    },
+    "147": {
+        "id": "147",
+        "name": "Shire of Narrogin",
+        "mapId": "704"
+    },
+    "151": {
+        "id": "151",
+        "name": "Shire of Wickepin",
+        "mapId": "729"
+    },
+    "70": {
+        "id": "70",
+        "name": "Quilpie Shire Council",
+        "mapId": "593"
+    },
+    "405": {
+        "id": "405",
+        "name": "Willoughby City Council",
+        "mapId": "864"
+    },
+    "366": {
+        "id": "366",
+        "name": "Strathfield Council",
+        "mapId": "764"
+    },
+    "323": {
+        "id": "323",
+        "name": "Penrith City Council",
+        "mapId": "570"
+    },
+    "312": {
+        "id": "312",
+        "name": "Hawkesbury City Council",
+        "mapId": "373"
+    },
+    "175": {
+        "id": "175",
+        "name": "City of Armadale",
+        "mapId": "143"
+    },
+    "296": {
+        "id": "296",
+        "name": "Litchfield Council",
+        "mapId": "447"
+    },
+    "243": {
+        "id": "243",
+        "name": "Shire of Goomalling",
+        "mapId": "674"
+    },
+    "250": {
+        "id": "250",
+        "name": "Shire of Northam",
+        "mapId": "706"
+    },
+    "365": {
+        "id": "365",
+        "name": "Warren Shire Council",
+        "mapId": "844"
+    },
+    "373": {
+        "id": "373",
+        "name": "Bogan Shire Council",
+        "mapId": "80"
+    },
+    "314": {
+        "id": "314",
+        "name": "Blacktown City Council",
+        "mapId": "75"
+    },
+    "171": {
+        "id": "171",
+        "name": "Shire of Bruce Rock",
+        "mapId": "644"
+    },
+    "348": {
+        "id": "348",
+        "name": "Wollongong City Council",
+        "mapId": "868"
+    },
+    "336": {
+        "id": "336",
+        "name": "Coffs Harbour City Council",
+        "mapId": "224"
+    },
+    "440": {
+        "id": "440",
+        "name": "Moira Shire Council",
+        "mapId": "493"
+    },
+    "458": {
+        "id": "458",
+        "name": "City of Greater Geelong ",
+        "mapId": "163"
+    },
+    "2": {
+        "id": "2",
+        "name": "Brisbane City Council",
+        "mapId": "91"
+    },
+    "126": {
+        "id": "126",
+        "name": "City of Onkaparinga",
+        "mapId": "184"
+    },
+    "308": {
+        "id": "308",
+        "name": "Inner West Council",
+        "mapId": "403"
+    },
+    "437": {
+        "id": "437",
+        "name": "Wellington Shire Council",
+        "mapId": "851"
+    },
+    "470": {
+        "id": "470",
+        "name": "Latrobe City Council",
+        "mapId": "438"
+    },
+    "420": {
+        "id": "420",
+        "name": "Wollondilly Shire Council",
+        "mapId": "867"
+    },
+    "524": {
+        "id": "524",
+        "name": "Sorell Council",
+        "mapId": "749"
+    },
+    "466": {
+        "id": "466",
+        "name": "Brimbank City Council",
+        "mapId": "90"
+    },
+    "42": {
+        "id": "42",
+        "name": "Cairns Regional Council",
+        "mapId": "106"
+    },
+    "272": {
+        "id": "272",
+        "name": "Shire of Narembeen",
+        "mapId": "703"
+    },
+    "19": {
+        "id": "19",
+        "name": "Redland City Council",
+        "mapId": "600"
+    },
+    "50": {
+        "id": "50",
+        "name": "Toowoomba Regional Council",
+        "mapId": "793"
+    },
+    "59": {
+        "id": "59",
+        "name": "Goondiwindi Regional Council",
+        "mapId": "349"
+    },
+    "367": {
+        "id": "367",
+        "name": "Nambucca Valley Council",
+        "mapId": "523"
+    },
+    "11": {
+        "id": "11",
+        "name": "Central Highlands Regional Council",
+        "mapId": "131"
+    },
+    "33": {
+        "id": "33",
+        "name": "Banana Shire Council",
+        "mapId": "45"
+    },
+    "492": {
+        "id": "492",
+        "name": "City of Melbourne",
+        "mapId": "176"
+    },
+    "27": {
+        "id": "27",
+        "name": "Gladstone Regional Council",
+        "mapId": "336"
+    },
+    "483": {
+        "id": "483",
+        "name": "Hindmarsh Shire Council",
+        "mapId": "378"
+    },
+    "465": {
+        "id": "465",
+        "name": "Mitchell Shire Council",
+        "mapId": "488"
+    },
+    "493": {
+        "id": "493",
+        "name": "Murrindindi Shire Council",
+        "mapId": "516"
+    },
+    "97": {
+        "id": "97",
+        "name": "Copper Coast Council",
+        "mapId": "239"
+    },
+    "98": {
+        "id": "98",
+        "name": "Barunga West Council",
+        "mapId": "50"
+    },
+    "496": {
+        "id": "496",
+        "name": "Manningham City Council",
+        "mapId": "468"
+    },
+    "456": {
+        "id": "456",
+        "name": "Yarra Ranges Council",
+        "mapId": "878"
+    },
+    "16": {
+        "id": "16",
+        "name": "North Burnett Regional Council",
+        "mapId": "536"
+    },
+    "506": {
+        "id": "506",
+        "name": "City of Port Phillip",
+        "mapId": "191"
+    },
+    "85": {
+        "id": "85",
+        "name": "City of Charles Sturt",
+        "mapId": "154"
+    },
+    "17": {
+        "id": "17",
+        "name": "Scenic Rim Regional Council",
+        "mapId": "629"
+    },
+    "341": {
+        "id": "341",
+        "name": "Junee Shire Council",
+        "mapId": "417"
+    },
+    "455": {
+        "id": "455",
+        "name": "Golden Plains Shire Council",
+        "mapId": "346"
+    },
+    "508": {
+        "id": "508",
+        "name": "Whitehorse City Council",
+        "mapId": "862"
+    },
+    "432": {
+        "id": "432",
+        "name": "Maroondah City Council",
+        "mapId": "474"
+    },
+    "445": {
+        "id": "445",
+        "name": "South Gippsland Shire Council",
+        "mapId": "752"
+    },
+    "448": {
+        "id": "448",
+        "name": "Bass Coast Shire Council",
+        "mapId": "51"
+    },
+    "507": {
+        "id": "507",
+        "name": "Mornington Peninsula Shire",
+        "mapId": "500"
+    },
+    "116": {
+        "id": "116",
+        "name": "City of Salisbury",
+        "mapId": "195"
+    },
+    "132": {
+        "id": "132",
+        "name": "City of Port Adelaide Enfield",
+        "mapId": "189"
+    },
+    "122": {
+        "id": "122",
+        "name": "City of Victor Harbor",
+        "mapId": "204"
+    },
+    "142": {
+        "id": "142",
+        "name": "Alexandrina Council",
+        "mapId": "12"
+    },
+    "145": {
+        "id": "145",
+        "name": "Wudinna District Council",
+        "mapId": "874"
+    },
+    "143": {
+        "id": "143",
+        "name": "District Council of Tumby Bay",
+        "mapId": "276"
+    },
+    "394": {
+        "id": "394",
+        "name": "Bellingen Shire Council",
+        "mapId": "61"
+    },
+    "519": {
+        "id": "519",
+        "name": "Circular Head Council",
+        "mapId": "140"
+    },
+    "533": {
+        "id": "533",
+        "name": "City of Hobart",
+        "mapId": "165"
+    },
+    "117": {
+        "id": "117",
+        "name": "Adelaide Hills Council",
+        "mapId": "5"
+    },
+    "49": {
+        "id": "49",
+        "name": "City of Moreton Bay",
+        "mapId": "499"
+    },
+    "41": {
+        "id": "41",
+        "name": "Charters Towers Regional Council",
+        "mapId": "137"
+    },
+    "47": {
+        "id": "47",
+        "name": "Palm Island Aboriginal Shire Council",
+        "mapId": "566"
+    },
+    "52": {
+        "id": "52",
+        "name": "Flinders Shire Council",
+        "mapId": "321"
+    },
+    "65": {
+        "id": "65",
+        "name": "Carpentaria Shire Council",
+        "mapId": "117"
+    },
+    "68": {
+        "id": "68",
+        "name": "McKinlay Shire Council",
+        "mapId": "476"
+    },
+    "343": {
+        "id": "343",
+        "name": "Murrumbidgee Council",
+        "mapId": "517"
+    },
+    "426": {
+        "id": "426",
+        "name": "Edward River Council",
+        "mapId": "301"
+    },
+    "391": {
+        "id": "391",
+        "name": "Berrigan Shire Council",
+        "mapId": "66"
+    },
+    "446": {
+        "id": "446",
+        "name": "Baw Baw Shire Council",
+        "mapId": "56"
+    },
+    "481": {
+        "id": "481",
+        "name": "Moyne Shire Council",
+        "mapId": "508"
+    },
+    "495": {
+        "id": "495",
+        "name": "Warrnambool City Council",
+        "mapId": "845"
+    },
+    "449": {
+        "id": "449",
+        "name": "Strathbogie Shire Council",
+        "mapId": "763"
+    },
+    "180": {
+        "id": "180",
+        "name": "Shire of Dardanup",
+        "mapId": "662"
+    },
+    "443": {
+        "id": "443",
+        "name": "City of Stonnington",
+        "mapId": "198"
+    },
+    "501": {
+        "id": "501",
+        "name": "Glen Eira City Council",
+        "mapId": "338"
+    },
+    "6": {
+        "id": "6",
+        "name": "Southern Downs Regional Council",
+        "mapId": "753"
+    },
+    "485": {
+        "id": "485",
+        "name": "Hume City Council",
+        "mapId": "385"
+    },
+    "94": {
+        "id": "94",
+        "name": "Port Pirie Regional Council",
+        "mapId": "583"
+    },
+    "144": {
+        "id": "144",
+        "name": "Wakefield Regional Council",
+        "mapId": "839"
+    },
+    "471": {
+        "id": "471",
+        "name": "City of Monash",
+        "mapId": "179"
+    },
+    "10": {
+        "id": "10",
+        "name": "Cloncurry Shire Council",
+        "mapId": "218"
+    },
+    "24": {
+        "id": "24",
+        "name": "Burke Shire Council",
+        "mapId": "100"
+    },
+    "34": {
+        "id": "34",
+        "name": "Mount Isa City Council",
+        "mapId": "507"
+    },
+    "36": {
+        "id": "36",
+        "name": "Mornington Shire Council",
+        "mapId": "501"
+    },
+    "62": {
+        "id": "62",
+        "name": "Boulia Shire Council",
+        "mapId": "82"
+    },
+    "301": {
+        "id": "301",
+        "name": "Barkly Regional Council",
+        "mapId": "49"
+    },
+    "499": {
+        "id": "499",
+        "name": "Towong Shire Council",
+        "mapId": "807"
+    },
+    "434": {
+        "id": "434",
+        "name": "Wyndham City Council",
+        "mapId": "876"
+    },
+    "469": {
+        "id": "469",
+        "name": "Macedon Ranges Shire Council",
+        "mapId": "464"
+    },
+    "135": {
+        "id": "135",
+        "name": "District Council of Coober Pedy",
+        "mapId": "263"
+    },
+    "101": {
+        "id": "101",
+        "name": "Mount Barker District Council",
+        "mapId": "505"
+    },
+    "357": {
+        "id": "357",
+        "name": "Inverell Shire Council",
+        "mapId": "406"
+    },
+    "413": {
+        "id": "413",
+        "name": "Cootamundra-Gundagai Regional Council",
+        "mapId": "238"
+    },
+    "382": {
+        "id": "382",
+        "name": "Northern Beaches Council",
+        "mapId": "543"
+    },
+    "431": {
+        "id": "431",
+        "name": "Corangamite Shire Council",
+        "mapId": "240"
+    },
+    "450": {
+        "id": "450",
+        "name": "Colac Otway Shire Council",
+        "mapId": "225"
+    },
+    "230": {
+        "id": "230",
+        "name": "Shire of Dandaragan",
+        "mapId": "661"
+    },
+    "30": {
+        "id": "30",
+        "name": "Barcaldine Regional Council",
+        "mapId": "47"
+    },
+    "178": {
+        "id": "178",
+        "name": "City of Joondalup",
+        "mapId": "167"
+    },
+    "491": {
+        "id": "491",
+        "name": "East Gippsland Shire Council",
+        "mapId": "295"
+    },
+    "476": {
+        "id": "476",
+        "name": "City of Whittlesea ",
+        "mapId": "208"
+    },
+    "184": {
+        "id": "184",
+        "name": "Shire of Chittering",
+        "mapId": "649"
+    },
+    "328": {
+        "id": "328",
+        "name": "Upper Lachlan Shire Council",
+        "mapId": "826"
+    },
+    "395": {
+        "id": "395",
+        "name": "Bland Shire Council",
+        "mapId": "76"
+    },
+    "198": {
+        "id": "198",
+        "name": "Shire of Jerramungup",
+        "mapId": "678"
+    },
+    "318": {
+        "id": "318",
+        "name": "Randwick City Council",
+        "mapId": "594"
+    },
+    "381": {
+        "id": "381",
+        "name": "Wentworth Shire Council",
+        "mapId": "852"
+    },
+    "218": {
+        "id": "218",
+        "name": "Town of Victoria Park",
+        "mapId": "804"
+    },
+    "306": {
+        "id": "306",
+        "name": "Snowy Monaro Regional Council",
+        "mapId": "742"
+    },
+    "460": {
+        "id": "460",
+        "name": "Loddon Shire Council",
+        "mapId": "457"
+    },
+    "148": {
+        "id": "148",
+        "name": "Shire of Serpentine Jarrahdale",
+        "mapId": "716"
+    },
+    "4": {
+        "id": "4",
+        "name": "Mackay Regional Council",
+        "mapId": "465"
+    },
+    "43": {
+        "id": "43",
+        "name": "Isaac Regional Council",
+        "mapId": "409"
+    },
+    "104": {
+        "id": "104",
+        "name": "Roxby Council",
+        "mapId": "621"
+    },
+    "305": {
+        "id": "305",
+        "name": "Kyogle Council",
+        "mapId": "434"
+    },
+    "512": {
+        "id": "512",
+        "name": "Northern Midlands Council",
+        "mapId": "545"
+    },
+    "310": {
+        "id": "310",
+        "name": "Moree Plains Shire Council",
+        "mapId": "496"
+    },
+    "378": {
+        "id": "378",
+        "name": "Narrabri Shire Council",
+        "mapId": "526"
+    },
+    "273": {
+        "id": "273",
+        "name": "Shire of Menzies",
+        "mapId": "691"
+    },
+    "389": {
+        "id": "389",
+        "name": "Federation Council",
+        "mapId": "317"
+    },
+    "304": {
+        "id": "304",
+        "name": "Greater Hume Council",
+        "mapId": "356"
+    },
+    "136": {
+        "id": "136",
+        "name": "City of Playford",
+        "mapId": "188"
+    },
+    "276": {
+        "id": "276",
+        "name": "City of Kalamunda",
+        "mapId": "168"
+    },
+    "313": {
+        "id": "313",
+        "name": "Muswellbrook Shire Council",
+        "mapId": "519"
+    },
+    "422": {
+        "id": "422",
+        "name": "Upper Hunter Shire Council",
+        "mapId": "825"
+    },
+    "425": {
+        "id": "425",
+        "name": "Canterbury Bankstown Council",
+        "mapId": "114"
+    },
+    "286": {
+        "id": "286",
+        "name": "East Arnhem Regional Council",
+        "mapId": "294"
+    },
+    "534": {
+        "id": "534",
+        "name": "Glenorchy City Council",
+        "mapId": "342"
+    },
+    "392": {
+        "id": "392",
+        "name": "City of Sydney",
+        "mapId": "201"
+    },
+    "500": {
+        "id": "500",
+        "name": "Mildura Rural City Council",
+        "mapId": "487"
+    },
+    "397": {
+        "id": "397",
+        "name": "Wagga Wagga City Council",
+        "mapId": "838"
+    },
+    "28": {
+        "id": "28",
+        "name": "Sunshine Coast Council",
+        "mapId": "767"
+    },
+    "335": {
+        "id": "335",
+        "name": "Burwood Council",
+        "mapId": "102"
+    },
+    "454": {
+        "id": "454",
+        "name": "Moonee Valley City Council",
+        "mapId": "494"
+    },
+    "453": {
+        "id": "453",
+        "name": "City of Kingston",
+        "mapId": "171"
+    },
+    "359": {
+        "id": "359",
+        "name": "Fairfield City Council",
+        "mapId": "315"
+    },
+    "337": {
+        "id": "337",
+        "name": "Liverpool City Council",
+        "mapId": "449"
+    },
+    "176": {
+        "id": "176",
+        "name": "Shire of Peppermint Grove",
+        "mapId": "709"
+    },
+    "260": {
+        "id": "260",
+        "name": "Town of Cottesloe",
+        "mapId": "799"
+    },
+    "418": {
+        "id": "418",
+        "name": "Central Darling Shire Council",
+        "mapId": "127"
+    },
+    "472": {
+        "id": "472",
+        "name": "Ararat Rural City Council",
+        "mapId": "22"
+    },
+    "371": {
+        "id": "371",
+        "name": "Queanbeyan-Palerang Regional Council",
+        "mapId": "592"
+    },
+    "361": {
+        "id": "361",
+        "name": "Bega Valley Shire Council",
+        "mapId": "60"
+    },
+    "398": {
+        "id": "398",
+        "name": "Cumberland City Council",
+        "mapId": "251"
+    },
+    "488": {
+        "id": "488",
+        "name": "Yarra City Council",
+        "mapId": "877"
+    },
+    "510": {
+        "id": "510",
+        "name": "City of Launceston",
+        "mapId": "173"
+    },
+    "531": {
+        "id": "531",
+        "name": "Kingborough Council",
+        "mapId": "426"
+    },
+    "430": {
+        "id": "430",
+        "name": "Indigo Shire Council",
+        "mapId": "400"
+    },
+    "490": {
+        "id": "490",
+        "name": "Mansfield Shire Council",
+        "mapId": "469"
+    },
+    "211": {
+        "id": "211",
+        "name": "Shire of Gingin",
+        "mapId": "672"
+    },
+    "518": {
+        "id": "518",
+        "name": "Huon Valley Council",
+        "mapId": "388"
+    },
+    "368": {
+        "id": "368",
+        "name": "Port Macquarie-Hastings Council",
+        "mapId": "581"
+    },
+    "320": {
+        "id": "320",
+        "name": "Kempsey Shire Council",
+        "mapId": "421"
+    },
+    "164": {
+        "id": "164",
+        "name": "City of Swan",
+        "mapId": "200"
+    },
+    "477": {
+        "id": "477",
+        "name": "Buloke Shire Council",
+        "mapId": "95"
+    },
+    "206": {
+        "id": "206",
+        "name": "Shire of Morawa",
+        "mapId": "695"
+    },
+    "38": {
+        "id": "38",
+        "name": "Fraser Coast Regional Council",
+        "mapId": "329"
+    },
+    "87": {
+        "id": "87",
+        "name": "Coorong District Council",
+        "mapId": "237"
+    },
+    "7": {
+        "id": "7",
+        "name": "Gympie Regional Council",
+        "mapId": "369"
+    },
+    "478": {
+        "id": "478",
+        "name": "Benalla Rural City Council",
+        "mapId": "63"
+    },
+    "274": {
+        "id": "274",
+        "name": "Shire of Trayning",
+        "mapId": "721"
+    },
+    "125": {
+        "id": "125",
+        "name": "District Council of Ceduna",
+        "mapId": "261"
+    },
+    "332": {
+        "id": "332",
+        "name": "Murray River Council",
+        "mapId": "515"
+    },
+    "269": {
+        "id": "269",
+        "name": "City of Wanneroo",
+        "mapId": "206"
+    },
+    "114": {
+        "id": "114",
+        "name": "Clare and Gilbert Valleys Council",
+        "mapId": "212"
+    },
+    "100": {
+        "id": "100",
+        "name": "Town of Gawler",
+        "mapId": "801"
+    },
+    "112": {
+        "id": "112",
+        "name": "Mid Murray Council",
+        "mapId": "482"
+    },
+    "169": {
+        "id": "169",
+        "name": "Shire of Mundaring",
+        "mapId": "699"
+    },
+    "330": {
+        "id": "330",
+        "name": "City of Parramatta Council",
+        "mapId": "186"
+    },
+    "90": {
+        "id": "90",
+        "name": "City of Whyalla",
+        "mapId": "209"
+    },
+    "433": {
+        "id": "433",
+        "name": "Frankston City Council",
+        "mapId": "328"
+    },
+    "258": {
+        "id": "258",
+        "name": "Shire of Harvey",
+        "mapId": "676"
+    },
+    "221": {
+        "id": "221",
+        "name": "Shire of Northampton",
+        "mapId": "707"
+    },
+    "514": {
+        "id": "514",
+        "name": "Break O Day Council",
+        "mapId": "86"
+    },
+    "536": {
+        "id": "536",
+        "name": "Glamorgan Spring Bay Council",
+        "mapId": "337"
+    },
+    "375": {
+        "id": "375",
+        "name": "Tenterfield Shire Council",
+        "mapId": "782"
+    },
+    "324": {
+        "id": "324",
+        "name": "Snowy Valleys Council",
+        "mapId": "743"
+    },
+    "474": {
+        "id": "474",
+        "name": "City of Ballarat ",
+        "mapId": "144"
+    },
+    "502": {
+        "id": "502",
+        "name": "Hepburn Shire Council",
+        "mapId": "375"
+    },
+    "209": {
+        "id": "209",
+        "name": "Shire of Boddington",
+        "mapId": "638"
+    },
+    "263": {
+        "id": "263",
+        "name": "Shire of Wandering",
+        "mapId": "725"
+    },
+    "224": {
+        "id": "224",
+        "name": "Shire of Esperance",
+        "mapId": "670"
+    },
+    "307": {
+        "id": "307",
+        "name": "Coonamble Shire Council",
+        "mapId": "236"
+    },
+    "393": {
+        "id": "393",
+        "name": "Lithgow City Council",
+        "mapId": "448"
+    },
+    "248": {
+        "id": "248",
+        "name": "Shire of East Pilbara",
+        "mapId": "669"
+    },
+    "358": {
+        "id": "358",
+        "name": "Balranald Shire Council",
+        "mapId": "44"
+    },
+    "281": {
+        "id": "281",
+        "name": "Shire of Toodyay",
+        "mapId": "720"
+    },
+    "325": {
+        "id": "325",
+        "name": "Walgett Shire Council",
+        "mapId": "842"
+    },
+    "288": {
+        "id": "288",
+        "name": "Central Desert Regional Council",
+        "mapId": "128"
+    },
+    "291": {
+        "id": "291",
+        "name": "Katherine Town Council",
+        "mapId": "419"
+    },
+    "292": {
+        "id": "292",
+        "name": "Roper Gulf Regional Council",
+        "mapId": "620"
+    },
+    "298": {
+        "id": "298",
+        "name": "Victoria Daly Regional Council",
+        "mapId": "831"
+    },
+    "404": {
+        "id": "404",
+        "name": "Woollahra Municipal Council",
+        "mapId": "870"
+    },
+    "167": {
+        "id": "167",
+        "name": "Shire of Bridgetown-Greenbushes",
+        "mapId": "640"
+    },
+    "419": {
+        "id": "419",
+        "name": "Central Coast Council NSW",
+        "mapId": "126"
+    },
+    "283": {
+        "id": "283",
+        "name": "Shire of Derby/West Kimberley",
+        "mapId": "664"
+    },
+    "134": {
+        "id": "134",
+        "name": "Port Augusta City Council",
+        "mapId": "580"
+    },
+    "452": {
+        "id": "452",
+        "name": "Southern Grampians Shire Council",
+        "mapId": "754"
+    },
+    "505": {
+        "id": "505",
+        "name": "Bayside City Council",
+        "mapId": "57"
+    },
+    "108": {
+        "id": "108",
+        "name": "District Council of Elliston",
+        "mapId": "264"
+    },
+    "139": {
+        "id": "139",
+        "name": "District Council of Streaky Bay",
+        "mapId": "275"
+    },
+    "376": {
+        "id": "376",
+        "name": "Yass Valley Council",
+        "mapId": "882"
+    },
+    "462": {
+        "id": "462",
+        "name": "Moorabool Shire Council",
+        "mapId": "495"
+    },
+    "110": {
+        "id": "110",
+        "name": "Berri Barmera Council",
+        "mapId": "65"
+    },
+    "45": {
+        "id": "45",
+        "name": "South Burnett Regional Council",
+        "mapId": "751"
+    },
+    "234": {
+        "id": "234",
+        "name": "Shire of Dowerin",
+        "mapId": "666"
+    },
+    "435": {
+        "id": "435",
+        "name": "Northern Grampians Shire Council",
+        "mapId": "544"
+    },
+    "497": {
+        "id": "497",
+        "name": "Central Goldfields Shire Council",
+        "mapId": "129"
+    },
+    "444": {
+        "id": "444",
+        "name": "Rural City of Wangaratta",
+        "mapId": "622"
+    },
+    "546": {
+        "id": "546",
+        "name": "Mt Buller Mt Stirling Alpine Resort",
+        "mapId": "887"
+    },
+    "179": {
+        "id": "179",
+        "name": "Shire of Corrigin",
+        "mapId": "655"
+    },
+    "226": {
+        "id": "226",
+        "name": "Shire of Brookton",
+        "mapId": "641"
+    },
+    "516": {
+        "id": "516",
+        "name": "West Coast Council",
+        "mapId": "854"
+    },
+    "223": {
+        "id": "223",
+        "name": "Shire of Mount Marshall",
+        "mapId": "697"
+    },
+    "192": {
+        "id": "192",
+        "name": "City of Canning",
+        "mapId": "152"
+    },
+    "208": {
+        "id": "208",
+        "name": "City of Gosnells",
+        "mapId": "160"
+    },
+    "480": {
+        "id": "480",
+        "name": "Pyrenees Shire Council",
+        "mapId": "591"
+    },
+    "160": {
+        "id": "160",
+        "name": "Shire of Meekatharra",
+        "mapId": "690"
+    },
+    "88": {
+        "id": "88",
+        "name": "District Council of Peterborough",
+        "mapId": "273"
+    },
+    "173": {
+        "id": "173",
+        "name": "City of Stirling",
+        "mapId": "197"
+    },
+    "166": {
+        "id": "166",
+        "name": "City of Kalgoorlie-Boulder",
+        "mapId": "169"
+    },
+    "436": {
+        "id": "436",
+        "name": "City of Wodonga",
+        "mapId": "210"
+    },
+    "482": {
+        "id": "482",
+        "name": "Glenelg Shire Council",
+        "mapId": "341"
+    },
+    "511": {
+        "id": "511",
+        "name": "Southern Midlands Council",
+        "mapId": "757"
+    },
+    "408": {
+        "id": "408",
+        "name": "City of Canada Bay Council",
+        "mapId": "151"
+    },
+    "56": {
+        "id": "56",
+        "name": "Maranoa Regional Council",
+        "mapId": "471"
+    },
+    "86": {
+        "id": "86",
+        "name": "City of Unley",
+        "mapId": "203"
+    },
+    "372": {
+        "id": "372",
+        "name": "Lockhart Shire Council",
+        "mapId": "455"
+    },
+    "303": {
+        "id": "303",
+        "name": "Uralla Shire Council",
+        "mapId": "828"
+    },
+    "461": {
+        "id": "461",
+        "name": "Merri-bek City Council",
+        "mapId": "498"
+    },
+    "225": {
+        "id": "225",
+        "name": "Shire of Victoria Plains",
+        "mapId": "723"
+    },
+    "354": {
+        "id": "354",
+        "name": "Wingecarribee Shire Council",
+        "mapId": "865"
+    },
+    "44": {
+        "id": "44",
+        "name": "Livingstone Shire Council",
+        "mapId": "451"
+    },
+    "214": {
+        "id": "214",
+        "name": "Shire of Ngaanyatjarraku",
+        "mapId": "705"
+    },
+    "451": {
+        "id": "451",
+        "name": "Gannawarra Shire Council",
+        "mapId": "330"
+    },
+    "386": {
+        "id": "386",
+        "name": "Lismore City Council",
+        "mapId": "446"
+    },
+    "384": {
+        "id": "384",
+        "name": "Richmond Valley Council",
+        "mapId": "614"
+    },
+    "251": {
+        "id": "251",
+        "name": "City of Rockingham",
+        "mapId": "193"
+    },
+    "504": {
+        "id": "504",
+        "name": "Surf Coast Shire Council",
+        "mapId": "769"
+    },
+    "207": {
+        "id": "207",
+        "name": "Shire of Williams",
+        "mapId": "730"
+    },
+    "107": {
+        "id": "107",
+        "name": "The Rural City of Murray Bridge",
+        "mapId": "789"
+    },
+    "256": {
+        "id": "256",
+        "name": "City of Melville",
+        "mapId": "177"
+    },
+    "5": {
+        "id": "5",
+        "name": "Torres Shire Council",
+        "mapId": "794"
+    },
+    "73": {
+        "id": "73",
+        "name": "Northern Peninsula Area Regional Council",
+        "mapId": "546"
+    },
+    "77": {
+        "id": "77",
+        "name": "Balonne Shire Council",
+        "mapId": "43"
+    },
+    "194": {
+        "id": "194",
+        "name": "Town of East Fremantle",
+        "mapId": "800"
+    },
+    "457": {
+        "id": "457",
+        "name": "Yarriambiack Shire Council",
+        "mapId": "881"
+    },
+    "414": {
+        "id": "414",
+        "name": "Campbelltown City Council NSW",
+        "mapId": "109"
+    },
+    "498": {
+        "id": "498",
+        "name": "Borough of Queenscliffe",
+        "mapId": "81"
+    },
+    "464": {
+        "id": "464",
+        "name": "Alpine Shire Council",
+        "mapId": "16"
+    },
+    "369": {
+        "id": "369",
+        "name": "Weddin Shire Council",
+        "mapId": "850"
+    },
+    "428": {
+        "id": "428",
+        "name": "Tweed Shire Council",
+        "mapId": "810"
+    },
+    "379": {
+        "id": "379",
+        "name": "Cabonne Council",
+        "mapId": "105"
+    },
+    "423": {
+        "id": "423",
+        "name": "Cowra Council",
+        "mapId": "245"
+    },
+    "410": {
+        "id": "410",
+        "name": "Clarence Valley Council",
+        "mapId": "215"
+    },
+    "14": {
+        "id": "14",
+        "name": "Burdekin Shire Council",
+        "mapId": "99"
+    },
+    "103": {
+        "id": "103",
+        "name": "District Council of Kimba",
+        "mapId": "268"
+    },
+    "150": {
+        "id": "150",
+        "name": "Shire of Wyalkatchem",
+        "mapId": "734"
+    },
+    "415": {
+        "id": "415",
+        "name": "MidCoast Council",
+        "mapId": "485"
+    },
+    "429": {
+        "id": "429",
+        "name": "Glen Innes Severn Council",
+        "mapId": "340"
+    },
+    "319": {
+        "id": "319",
+        "name": "Armidale Regional Council",
+        "mapId": "23"
+    },
+    "374": {
+        "id": "374",
+        "name": "Ballina Shire Council",
+        "mapId": "42"
+    },
+    "240": {
+        "id": "240",
+        "name": "Shire of Halls Creek",
+        "mapId": "675"
+    },
+    "191": {
+        "id": "191",
+        "name": "Shire of Dalwallinu",
+        "mapId": "660"
+    },
+    "409": {
+        "id": "409",
+        "name": "Gilgandra Shire Council",
+        "mapId": "334"
+    },
+    "168": {
+        "id": "168",
+        "name": "Shire of Westonia",
+        "mapId": "728"
+    },
+    "441": {
+        "id": "441",
+        "name": "Maribyrnong City Council",
+        "mapId": "473"
+    },
+    "370": {
+        "id": "370",
+        "name": "Dubbo Regional Council",
+        "mapId": "287"
+    },
+    "227": {
+        "id": "227",
+        "name": "Shire of Merredin",
+        "mapId": "692"
+    },
+    "133": {
+        "id": "133",
+        "name": "Adelaide Plains Council",
+        "mapId": "6"
+    },
+    "486": {
+        "id": "486",
+        "name": "Cardinia Shire Council",
+        "mapId": "116"
+    },
+    "159": {
+        "id": "159",
+        "name": "Shire of Plantagenet",
+        "mapId": "712"
+    },
+    "177": {
+        "id": "177",
+        "name": "City of Albany",
+        "mapId": "142"
+    },
+    "411": {
+        "id": "411",
+        "name": "Mid-Western Regional Council",
+        "mapId": "483"
+    },
+    "252": {
+        "id": "252",
+        "name": "Shire of Collie",
+        "mapId": "652"
+    },
+    "417": {
+        "id": "417",
+        "name": "Tamworth Regional Council",
+        "mapId": "773"
+    },
+    "99": {
+        "id": "99",
+        "name": "City of Mount Gambier",
+        "mapId": "180"
+    },
+    "183": {
+        "id": "183",
+        "name": "Shire of Murray",
+        "mapId": "701"
+    },
+    "262": {
+        "id": "262",
+        "name": "Shire of Laverton",
+        "mapId": "687"
+    },
+    "302": {
+        "id": "302",
+        "name": "West Tamar Council",
+        "mapId": "855"
+    },
+    "529": {
+        "id": "529",
+        "name": "Meander Valley Council",
+        "mapId": "477"
+    },
+    "39": {
+        "id": "39",
+        "name": "Diamantina Shire Council",
+        "mapId": "259"
+    },
+    "257": {
+        "id": "257",
+        "name": "Shire of Three Springs",
+        "mapId": "719"
+    },
+    "487": {
+        "id": "487",
+        "name": "West Wimmera Shire Council",
+        "mapId": "856"
+    },
+    "289": {
+        "id": "289",
+        "name": "Alice Springs Town Council",
+        "mapId": "13"
+    },
+    "299": {
+        "id": "299",
+        "name": "MacDonnell Regional Council",
+        "mapId": "463"
+    },
+    "484": {
+        "id": "484",
+        "name": "City of Darebin",
+        "mapId": "156"
+    },
+    "338": {
+        "id": "338",
+        "name": "Parkes Shire Council",
+        "mapId": "567"
+    },
+    "364": {
+        "id": "364",
+        "name": "Forbes Shire Council",
+        "mapId": "325"
+    },
+    "350": {
+        "id": "350",
+        "name": "Hilltops Council",
+        "mapId": "376"
+    },
+    "196": {
+        "id": "196",
+        "name": "Shire of Nungarin",
+        "mapId": "708"
+    },
+    "195": {
+        "id": "195",
+        "name": "Shire of Dumbleyung",
+        "mapId": "667"
+    },
+    "31": {
+        "id": "31",
+        "name": "Bulloo Shire Council",
+        "mapId": "94"
+    },
+    "249": {
+        "id": "249",
+        "name": "Shire of Waroona",
+        "mapId": "726"
+    },
+    "346": {
+        "id": "346",
+        "name": "Shellharbour City Council",
+        "mapId": "634"
+    },
+    "522": {
+        "id": "522",
+        "name": "Waratah Wynyard Council",
+        "mapId": "843"
+    },
+    "383": {
+        "id": "383",
+        "name": "Albury City Council",
+        "mapId": "10"
+    },
+    "189": {
+        "id": "189",
+        "name": "Shire of Perenjori",
+        "mapId": "710"
+    },
+    "215": {
+        "id": "215",
+        "name": "Shire of Kulin",
+        "mapId": "685"
+    },
+    "216": {
+        "id": "216",
+        "name": "Shire of Kondinin",
+        "mapId": "683"
+    },
+    "220": {
+        "id": "220",
+        "name": "Shire of Kojonup",
+        "mapId": "682"
+    },
+    "138": {
+        "id": "138",
+        "name": "Naracoorte Lucindale Council",
+        "mapId": "525"
+    },
+    "140": {
+        "id": "140",
+        "name": "City of Prospect",
+        "mapId": "192"
+    },
+    "268": {
+        "id": "268",
+        "name": "Shire of Wongan-Ballidu",
+        "mapId": "732"
+    },
+    "185": {
+        "id": "185",
+        "name": "Shire of Ashburton",
+        "mapId": "635"
+    },
+    "60": {
+        "id": "60",
+        "name": "Noosa Shire Council",
+        "mapId": "535"
+    },
+    "549": {
+        "id": "549",
+        "name": "Mt Hotham Alpine Resort",
+        "mapId": "513"
+    },
+    "284": {
+        "id": "284",
+        "name": "City of Karratha",
+        "mapId": "170"
+    },
+    "46": {
+        "id": "46",
+        "name": "Doomadgee Aboriginal Shire Council",
+        "mapId": "281"
+    },
+    "96": {
+        "id": "96",
+        "name": "City of Holdfast Bay",
+        "mapId": "166"
+    },
+    "35": {
+        "id": "35",
+        "name": "Rockhampton Regional Council",
+        "mapId": "619"
+    },
+    "331": {
+        "id": "331",
+        "name": "Narrandera Shire Council",
+        "mapId": "527"
+    },
+    "360": {
+        "id": "360",
+        "name": "Leeton Shire Council",
+        "mapId": "440"
+    },
+    "247": {
+        "id": "247",
+        "name": "City of Kwinana",
+        "mapId": "172"
+    },
+    "193": {
+        "id": "193",
+        "name": "Shire of Kellerberrin",
+        "mapId": "680"
+    },
+    "285": {
+        "id": "285",
+        "name": "Shire of Gnowangerup",
+        "mapId": "673"
+    },
+    "527": {
+        "id": "527",
+        "name": "Kentish Council",
+        "mapId": "422"
+    },
+    "530": {
+        "id": "530",
+        "name": "Latrobe Council",
+        "mapId": "439"
+    },
+    "63": {
+        "id": "63",
+        "name": "Blackall-Tambo Regional Council",
+        "mapId": "74"
+    },
+    "51": {
+        "id": "51",
+        "name": "Whitsunday Regional Council",
+        "mapId": "863"
+    },
+    "447": {
+        "id": "447",
+        "name": "City of Casey",
+        "mapId": "153"
+    },
+    "467": {
+        "id": "467",
+        "name": "Mount Alexander Shire Council",
+        "mapId": "503"
+    },
+    "416": {
+        "id": "416",
+        "name": "Gunnedah Shire Council",
+        "mapId": "366"
+    },
+    "537": {
+        "id": "537",
+        "name": "King Island Council",
+        "mapId": "425"
+    },
+    "265": {
+        "id": "265",
+        "name": "Shire of Coolgardie",
+        "mapId": "653"
+    },
+    "400": {
+        "id": "400",
+        "name": "Cobar Shire Council",
+        "mapId": "223"
+    },
+    "385": {
+        "id": "385",
+        "name": "Lachlan Shire Council",
+        "mapId": "435"
+    },
+    "503": {
+        "id": "503",
+        "name": "Knox City Council",
+        "mapId": "429"
+    },
+    "322": {
+        "id": "322",
+        "name": "Griffith City Council",
+        "mapId": "364"
+    },
+    "396": {
+        "id": "396",
+        "name": "Goulburn Mulwaree Council",
+        "mapId": "351"
+    },
+    "316": {
+        "id": "316",
+        "name": "Broken Hill City Council",
+        "mapId": "92"
+    },
+    "351": {
+        "id": "351",
+        "name": "Eurobodalla Shire Council",
+        "mapId": "310"
+    },
+    "402": {
+        "id": "402",
+        "name": "Blayney Shire Council",
+        "mapId": "77"
+    },
+    "15": {
+        "id": "15",
+        "name": "Ipswich City Council",
+        "mapId": "407"
+    },
+    "401": {
+        "id": "401",
+        "name": "Orange City Council",
+        "mapId": "561"
+    },
+    "92": {
+        "id": "92",
+        "name": "Tatiara District Council",
+        "mapId": "776"
+    },
+    "204": {
+        "id": "204",
+        "name": "City of Busselton",
+        "mapId": "150"
+    },
+    "26": {
+        "id": "26",
+        "name": "Tablelands Regional Council",
+        "mapId": "772"
+    },
+    "57": {
+        "id": "57",
+        "name": "Paroo Shire Council",
+        "mapId": "568"
+    },
+    "279": {
+        "id": "279",
+        "name": "City of Greater Geraldton",
+        "mapId": "164"
+    },
+    "106": {
+        "id": "106",
+        "name": "City of West Torrens",
+        "mapId": "207"
+    },
+    "12": {
+        "id": "12",
+        "name": "Somerset Regional Council",
+        "mapId": "748"
+    },
+    "253": {
+        "id": "253",
+        "name": "City of Belmont",
+        "mapId": "146"
+    },
+    "407": {
+        "id": "407",
+        "name": "Singleton Council",
+        "mapId": "741"
+    },
+    "67": {
+        "id": "67",
+        "name": "Murweh Shire Council",
+        "mapId": "518"
+    },
+    "264": {
+        "id": "264",
+        "name": "Shire of Capel",
+        "mapId": "645"
+    },
+    "259": {
+        "id": "259",
+        "name": "Shire of Quairading",
+        "mapId": "713"
+    },
+    "161": {
+        "id": "161",
+        "name": "Town of Cambridge",
+        "mapId": "797"
+    },
+    "339": {
+        "id": "339",
+        "name": "City of Ryde",
+        "mapId": "194"
+    },
+    "345": {
+        "id": "345",
+        "name": "Hunter\u2019s Hill Council",
+        "mapId": "387"
+    },
+    "146": {
+        "id": "146",
+        "name": "Light Regional Council",
+        "mapId": "443"
+    },
+    "127": {
+        "id": "127",
+        "name": "The Barossa Council",
+        "mapId": "784"
+    },
+    "37": {
+        "id": "37",
+        "name": "Lockyer Valley Regional Council",
+        "mapId": "456"
+    },
+    "130": {
+        "id": "130",
+        "name": "Campbelltown City Council SA",
+        "mapId": "110"
+    },
+    "3": {
+        "id": "3",
+        "name": "Barcoo Shire Council",
+        "mapId": "48"
+    },
+    "439": {
+        "id": "439",
+        "name": "Hobsons Bay City Council",
+        "mapId": "379"
+    },
+    "155": {
+        "id": "155",
+        "name": "Shire of Nannup",
+        "mapId": "702"
+    },
+    "271": {
+        "id": "271",
+        "name": "Shire of Manjimup",
+        "mapId": "689"
+    },
+    "174": {
+        "id": "174",
+        "name": "Shire of Ravensthorpe",
+        "mapId": "714"
+    },
+    "111": {
+        "id": "111",
+        "name": "City of Burnside",
+        "mapId": "149"
+    },
+    "347": {
+        "id": "347",
+        "name": "Gwydir Shire Council",
+        "mapId": "368"
+    },
+    "82": {
+        "id": "82",
+        "name": "Renmark Paringa Council",
+        "mapId": "603"
+    },
+    "380": {
+        "id": "380",
+        "name": "Shoalhaven City Council",
+        "mapId": "739"
+    },
+    "355": {
+        "id": "355",
+        "name": "Kiama Municipal Council",
+        "mapId": "423"
+    },
+    "154": {
+        "id": "154",
+        "name": "Shire of Cue",
+        "mapId": "658"
+    },
+    "261": {
+        "id": "261",
+        "name": "Shire of Murchison",
+        "mapId": "700"
+    },
+    "201": {
+        "id": "201",
+        "name": "Shire of Moora",
+        "mapId": "694"
+    },
+    "109": {
+        "id": "109",
+        "name": "Kingston District Council",
+        "mapId": "427"
+    },
+    "238": {
+        "id": "238",
+        "name": "City of Bayswater",
+        "mapId": "145"
+    },
+    "121": {
+        "id": "121",
+        "name": "District Council of Orroroo Carrieton",
+        "mapId": "272"
+    },
+    "123": {
+        "id": "123",
+        "name": "The Flinders Ranges Council",
+        "mapId": "786"
+    },
+    "421": {
+        "id": "421",
+        "name": "Brewarrina Shire Council",
+        "mapId": "87"
+    },
+    "228": {
+        "id": "228",
+        "name": "Shire of Mingenew",
+        "mapId": "693"
+    },
+    "115": {
+        "id": "115",
+        "name": "City of Norwood Payneham & St Peters",
+        "mapId": "183"
+    },
+    "399": {
+        "id": "399",
+        "name": "North Sydney Council",
+        "mapId": "539"
+    },
+    "545": {
+        "id": "545",
+        "name": "Falls Creek Alpine Resort",
+        "mapId": "886"
+    },
+    "526": {
+        "id": "526",
+        "name": "Brighton Council",
+        "mapId": "89"
+    },
+    "267": {
+        "id": "267",
+        "name": "Shire of Kent",
+        "mapId": "681"
+    },
+    "102": {
+        "id": "102",
+        "name": "Southern Mallee District Council",
+        "mapId": "755"
+    },
+    "326": {
+        "id": "326",
+        "name": "Carrathool Shire Council",
+        "mapId": "118"
+    },
+    "403": {
+        "id": "403",
+        "name": "Hay Shire Council",
+        "mapId": "374"
+    },
+    "295": {
+        "id": "295",
+        "name": "Coomalie Community Government Council",
+        "mapId": "234"
+    },
+    "266": {
+        "id": "266",
+        "name": "Town of Port Hedland",
+        "mapId": "803"
+    },
+    "186": {
+        "id": "186",
+        "name": "City of Nedlands",
+        "mapId": "181"
+    },
+    "152": {
+        "id": "152",
+        "name": "Shire of Leonora",
+        "mapId": "688"
+    },
+    "203": {
+        "id": "203",
+        "name": "Shire of Yalgoo",
+        "mapId": "736"
+    },
+    "165": {
+        "id": "165",
+        "name": "Shire of Chapman Valley",
+        "mapId": "648"
+    },
+    "236": {
+        "id": "236",
+        "name": "Shire of Shark Bay",
+        "mapId": "717"
+    },
+    "197": {
+        "id": "197",
+        "name": "Shire of Wyndham-East Kimberley",
+        "mapId": "735"
+    },
+    "535": {
+        "id": "535",
+        "name": "Central Highlands Council",
+        "mapId": "130"
+    },
+    "363": {
+        "id": "363",
+        "name": "Coolamon Shire Council",
+        "mapId": "233"
+    },
+    "131": {
+        "id": "131",
+        "name": "District Council of Franklin Harbour",
+        "mapId": "265"
+    },
+    "141": {
+        "id": "141",
+        "name": "District Council of Cleve",
+        "mapId": "262"
+    },
+    "362": {
+        "id": "362",
+        "name": "Dungog Shire Council",
+        "mapId": "289"
+    },
+    "137": {
+        "id": "137",
+        "name": "City of Adelaide",
+        "mapId": "141"
+    },
+    "280": {
+        "id": "280",
+        "name": "Shire of Wagin",
+        "mapId": "724"
+    },
+    "550": {
+        "id": "550",
+        "name": "Dinner Plain Alpine Resort",
+        "mapId": "889"
+    },
+    "153": {
+        "id": "153",
+        "name": "Shire of Katanning",
+        "mapId": "679"
+    },
+    "356": {
+        "id": "356",
+        "name": "Oberon Council",
+        "mapId": "555"
+    },
+    "494": {
+        "id": "494",
+        "name": "Horsham Rural City Council",
+        "mapId": "383"
+    },
+    "538": {
+        "id": "538",
+        "name": "Central Coast Council TAS",
+        "mapId": "125"
+    },
+    "93": {
+        "id": "93",
+        "name": "City of Port Lincoln",
+        "mapId": "190"
+    },
+    "202": {
+        "id": "202",
+        "name": "Shire of Carnamah",
+        "mapId": "646"
+    },
+    "377": {
+        "id": "377",
+        "name": "Narromine Shire Council",
+        "mapId": "528"
+    },
+    "352": {
+        "id": "352",
+        "name": "Liverpool Plains Shire Council",
+        "mapId": "450"
+    },
+    "329": {
+        "id": "329",
+        "name": "Walcha Council",
+        "mapId": "840"
+    },
+    "187": {
+        "id": "187",
+        "name": "Shire of Coorow",
+        "mapId": "654"
+    },
+    "32": {
+        "id": "32",
+        "name": "Longreach Regional Council",
+        "mapId": "459"
+    },
+    "540": {
+        "id": "540",
+        "name": "Lane Cove Council",
+        "mapId": "437"
+    },
+    "72": {
+        "id": "72",
+        "name": "Mareeba Shire Council",
+        "mapId": "472"
+    },
+    "199": {
+        "id": "199",
+        "name": "Shire of Carnarvon",
+        "mapId": "647"
+    },
+    "245": {
+        "id": "245",
+        "name": "Shire of Exmouth",
+        "mapId": "671"
+    },
+    "309": {
+        "id": "309",
+        "name": "Waverley Council",
+        "mapId": "849"
+    },
+    "213": {
+        "id": "213",
+        "name": "Shire of Lake Grace",
+        "mapId": "686"
+    },
+    "270": {
+        "id": "270",
+        "name": "City of Mandurah",
+        "mapId": "174"
+    },
+    "387": {
+        "id": "387",
+        "name": "Bathurst Regional Council",
+        "mapId": "52"
+    },
+    "333": {
+        "id": "333",
+        "name": "Bourke Shire Council",
+        "mapId": "83"
+    },
+    "89": {
+        "id": "89",
+        "name": "District Council of Grant",
+        "mapId": "266"
+    },
+    "162": {
+        "id": "162",
+        "name": "Shire of Cocos Keeling Islands",
+        "mapId": "651"
+    },
+    "21": {
+        "id": "21",
+        "name": "Kowanyama Aboriginal Shire Council",
+        "mapId": "430"
+    },
+    "25": {
+        "id": "25",
+        "name": "Etheridge Shire Council",
+        "mapId": "309"
+    },
+    "40": {
+        "id": "40",
+        "name": "Lockhart River Aboriginal Shire Council",
+        "mapId": "454"
+    },
+    "64": {
+        "id": "64",
+        "name": "Aurukun Shire Council",
+        "mapId": "26"
+    },
+    "71": {
+        "id": "71",
+        "name": "Cook Shire Council",
+        "mapId": "232"
+    },
+    "74": {
+        "id": "74",
+        "name": "Pormpuraaw Aboriginal Shire Council",
+        "mapId": "579"
+    },
+    "255": {
+        "id": "255",
+        "name": "Shire of Beverley",
+        "mapId": "637"
+    },
+    "157": {
+        "id": "157",
+        "name": "Shire of Irwin",
+        "mapId": "677"
+    },
+    "246": {
+        "id": "246",
+        "name": "City of Subiaco",
+        "mapId": "199"
+    },
+    "156": {
+        "id": "156",
+        "name": "Town of Mosman Park",
+        "mapId": "802"
+    },
+    "232": {
+        "id": "232",
+        "name": "City of Cockburn",
+        "mapId": "155"
+    },
+    "237": {
+        "id": "237",
+        "name": "City of Fremantle",
+        "mapId": "158"
+    },
+    "241": {
+        "id": "241",
+        "name": "Shire of Broomehill-Tambellup",
+        "mapId": "643"
+    },
+    "76": {
+        "id": "76",
+        "name": "Douglas Shire Council",
+        "mapId": "283"
+    },
+    "55": {
+        "id": "55",
+        "name": "Winton Shire Council",
+        "mapId": "866"
+    },
+    "235": {
+        "id": "235",
+        "name": "Shire of Denmark",
+        "mapId": "663"
+    },
+    "217": {
+        "id": "217",
+        "name": "Shire of Upper Gascoyne",
+        "mapId": "722"
+    },
+    "317": {
+        "id": "317",
+        "name": "Temora Shire Council",
+        "mapId": "780"
+    },
+    "517": {
+        "id": "517",
+        "name": "Burnie City Council",
+        "mapId": "101"
+    },
+    "532": {
+        "id": "532",
+        "name": "George Town Council",
+        "mapId": "332"
+    },
+    "521": {
+        "id": "521",
+        "name": "Devonport City Council",
+        "mapId": "258"
+    },
+    "349": {
+        "id": "349",
+        "name": "Byron Shire Council",
+        "mapId": "103"
+    },
+    "344": {
+        "id": "344",
+        "name": "Mosman Council",
+        "mapId": "502"
+    },
+    "188": {
+        "id": "188",
+        "name": "Shire of Cranbrook",
+        "mapId": "656"
+    },
+    "290": {
+        "id": "290",
+        "name": "West Arnhem Regional Council",
+        "mapId": "853"
+    },
+    "190": {
+        "id": "190",
+        "name": "Shire of Tammin",
+        "mapId": "718"
+    },
+    "287": {
+        "id": "287",
+        "name": "City Of Palmerston",
+        "mapId": "185"
+    },
+    "520": {
+        "id": "520",
+        "name": "Derwent Valley Council",
+        "mapId": "257"
+    },
+    "182": {
+        "id": "182",
+        "name": "Shire of Mukinbudin",
+        "mapId": "698"
+    },
+    "254": {
+        "id": "254",
+        "name": "Shire of Sandstone",
+        "mapId": "715"
+    },
+    "239": {
+        "id": "239",
+        "name": "Shire of Dundas",
+        "mapId": "668"
+    },
+    "412": {
+        "id": "412",
+        "name": "Camden Council",
+        "mapId": "107"
+    },
+    "75": {
+        "id": "75",
+        "name": "Hinchinbrook Shire Council",
+        "mapId": "377"
+    },
+    "525": {
+        "id": "525",
+        "name": "Flinders Council",
+        "mapId": "320"
+    },
+    "231": {
+        "id": "231",
+        "name": "Shire of Pingelly",
+        "mapId": "711"
+    },
+    "219": {
+        "id": "219",
+        "name": "Shire of Christmas Island",
+        "mapId": "650"
+    },
+    "294": {
+        "id": "294",
+        "name": "Wagait Shire Council",
+        "mapId": "837"
+    },
+    "297": {
+        "id": "297",
+        "name": "Belyuen Community Government Council",
+        "mapId": "62"
+    },
+    "300": {
+        "id": "300",
+        "name": "Tiwi Islands Regional Council",
+        "mapId": "791"
+    },
+    "29": {
+        "id": "29",
+        "name": "Cherbourg Aboriginal Shire Council",
+        "mapId": "138"
+    },
+    "278": {
+        "id": "278",
+        "name": "Shire of Woodanilling",
+        "mapId": "733"
+    },
+    "170": {
+        "id": "170",
+        "name": "Shire of Cunderdin",
+        "mapId": "659"
+    },
+    "61": {
+        "id": "61",
+        "name": "Mapoon Aboriginal Shire Council",
+        "mapId": "470"
+    },
+    "22": {
+        "id": "22",
+        "name": "Napranum Aboriginal Shire Council",
+        "mapId": "524"
+    },
+    "222": {
+        "id": "222",
+        "name": "Shire of Broome",
+        "mapId": "642"
+    },
+    "229": {
+        "id": "229",
+        "name": "Shire of Koorda",
+        "mapId": "684"
+    },
+    "210": {
+        "id": "210",
+        "name": "Shire of Wiluna",
+        "mapId": "731"
+    },
+    "54": {
+        "id": "54",
+        "name": "Torres Strait Island Regional Council",
+        "mapId": "795"
+    },
+    "1": {
+        "id": "1",
+        "name": "Croydon Shire Council",
+        "mapId": "249"
+    },
+    "53": {
+        "id": "53",
+        "name": "Yarrabah Aboriginal Shire Council",
+        "mapId": "880"
+    },
+    "200": {
+        "id": "200",
+        "name": "Town of Bassendean",
+        "mapId": "796"
+    },
+    "158": {
+        "id": "158",
+        "name": "Town of Claremont",
+        "mapId": "798"
+    },
+    "242": {
+        "id": "242",
+        "name": "Shire of Cuballing",
+        "mapId": "657"
+    },
+    "8": {
+        "id": "8",
+        "name": "Woorabinda Aboriginal Shire Council",
+        "mapId": "872"
+    },
+    "282": {
+        "id": "282",
+        "name": "City of Bunbury",
+        "mapId": "148"
+    },
+    "91": {
+        "id": "91",
+        "name": "Town of Walkerville",
+        "mapId": "805"
+    },
+    "275": {
+        "id": "275",
+        "name": "Shire of York",
+        "mapId": "738"
+    },
+    "80": {
+        "id": "80",
+        "name": "Anangu Pitjantjatjara Yankunytjatjara",
+        "mapId": "18"
+    },
+    "20": {
+        "id": "20",
+        "name": "Hope Vale Aboriginal Shire Council",
+        "mapId": "381"
+    },
+    "66": {
+        "id": "66",
+        "name": "Wujal Wujal Aboriginal Shire Council",
+        "mapId": "875"
+    },
+    "548": {
+        "id": "548",
+        "name": "Mt Baw Baw Alpine Resort",
+        "mapId": "888"
+    },
+    "84": {
+        "id": "84",
+        "name": "District Council of Yankalilla",
+        "mapId": "277"
+    },
+    "13": {
+        "id": "13",
+        "name": "Richmond Shire Council",
+        "mapId": "613"
+    }
+}
