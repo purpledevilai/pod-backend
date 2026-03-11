@@ -3,8 +3,11 @@ import { Construct } from 'constructs';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
+import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
+import * as events from 'aws-cdk-lib/aws-events';
+import * as targets from 'aws-cdk-lib/aws-events-targets';
 import path from 'path';
 
 export class PodBackendStack extends cdk.Stack {
@@ -110,6 +113,31 @@ export class PodBackendStack extends cdk.Stack {
     new apigateway.LambdaRestApi(this, 'APIGateway', {
       handler: apiLambda,
       proxy: true,
+    });
+
+    // RecycleMate Data Refresh Lambda (TypeScript, bundled with esbuild)
+    const refreshDataLambda = new NodejsFunction(this, 'RefreshDataLambda', {
+      functionName: 'refresh-recyclemate-data',
+      entry: path.join(__dirname, '..', 'lambda', 'refresh-data', 'index.ts'),
+      handler: 'handler',
+      runtime: lambda.Runtime.NODEJS_20_X,
+      timeout: cdk.Duration.minutes(15),
+      memorySize: 512,
+      bundling: {
+        minify: true,
+        sourceMap: true,
+      },
+    });
+
+    postcodeToCouncilTable.grantWriteData(refreshDataLambda);
+    councilsTable.grantWriteData(refreshDataLambda);
+    councilToBinSystemTable.grantWriteData(refreshDataLambda);
+    binSystemsTable.grantWriteData(refreshDataLambda);
+
+    // Weekly schedule — every Monday at 02:00 UTC
+    new events.Rule(this, 'RefreshDataWeeklyRule', {
+      schedule: events.Schedule.cron({ minute: '0', hour: '2', weekDay: 'MON' }),
+      targets: [new targets.LambdaFunction(refreshDataLambda)],
     });
   }
 }
