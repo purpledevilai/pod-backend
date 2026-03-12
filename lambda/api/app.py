@@ -15,6 +15,7 @@ import RequestHandlers.Councils.councils_for_postcode
 import RequestHandlers.BinSystems.bin_systems_for_council
 import RequestHandlers.Users.create_user
 import RequestHandlers.Users.get_user
+import RequestHandlers.Users.update_user
 import RequestHandlers.Agent.create_agent_context
 
 
@@ -62,6 +63,10 @@ handler_registry = {
     "/user": {
         "GET": {
             "handler": RequestHandlers.Users.get_user.handler,
+            "public": False
+        },
+        "PATCH": {
+            "handler": RequestHandlers.Users.update_user.handler,
             "public": False
         }
     },

@@ -9,6 +9,7 @@ class GetUserResponse(BaseModel):
     email: str
     council: Council
     bin_system: BinSystem
+    pod_configuration: str
     points: int
     created_at: int
     updated_at: int
@@ -29,12 +30,12 @@ def handler(payload: HandlerPayload) -> GetUserResponse:
     if not bin_system:
         raise Exception(f"Bin system not found for user: {user.bin_system_id}", 404)
     
-    # Return the user with resolved data
     return GetUserResponse(
         id=user.id,
         email=user.email,
         council=council,
         bin_system=bin_system,
+        pod_configuration=user.pod_configuration,
         points=user.points,
         created_at=user.created_at,
         updated_at=user.updated_at

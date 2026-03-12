@@ -11,6 +11,7 @@ class CreateUserBody(BaseModel):
     create_account_token: str
     council_id: str
     bin_system_id: str
+    pod_configuration: str = "none"
 
 class CreateUserResponse(BaseModel):
     user: User.User
@@ -54,7 +55,8 @@ def handler(payload: HandlerPayload ) -> CreateUserResponse:
     user_params = User.CreateUserParams(
         email=email,
         council_id=body.council_id,
-        bin_system_id=body.bin_system_id
+        bin_system_id=body.bin_system_id,
+        pod_configuration=body.pod_configuration
     )
     new_user = User.create_user(user_params)
     logger.info(f"User created with ID {new_user.id}")
