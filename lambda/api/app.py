@@ -15,6 +15,7 @@ import RequestHandlers.Councils.councils_for_postcode
 import RequestHandlers.BinSystems.bin_systems_for_council
 import RequestHandlers.Users.create_user
 import RequestHandlers.Users.get_user
+import RequestHandlers.Agent.create_agent_context
 
 
 # Load secrets
@@ -61,6 +62,12 @@ handler_registry = {
     "/user": {
         "GET": {
             "handler": RequestHandlers.Users.get_user.handler,
+            "public": False
+        }
+    },
+    "/create-agent-context": {
+        "POST": {
+            "handler": RequestHandlers.Agent.create_agent_context.handler,
             "public": False
         }
     }
