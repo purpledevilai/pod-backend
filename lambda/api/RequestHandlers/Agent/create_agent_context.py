@@ -3,6 +3,7 @@ import json
 import requests
 from pydantic import BaseModel
 from Models.HandlerPayload import HandlerPayload
+from Models.User import resolve_user
 
 
 class CreateAgentContextResponse(BaseModel):
@@ -19,16 +20,30 @@ def handler(payload: HandlerPayload) -> CreateAgentContextResponse:
     org_id = os.getenv("AJENTIFY_ORG_ID")
     agent_id = os.getenv("AGENT_ID")
 
+    pod_api_url = os.getenv("POD_API_URL")
+
     if not api_key or not org_id or not agent_id:
         raise Exception("Missing Ajentify configuration (AJENTIFY_API_KEY, AJENTIFY_ORG_ID, or AGENT_ID)", 500)
+
+    if not pod_api_url:
+        raise Exception("Missing POD_API_URL configuration", 500)
 
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"{api_key}",
     }
 
+    auth_token = payload.lambda_event.headers.get("Authorization")
+
+    resolved_user = resolve_user(user)
+
     prompt_args = {
-        "user_data": json.dumps(user.model_dump()),
+        "user_data": json.dumps(resolved_user.model_dump()),
+    }
+
+    user_defined = {
+        "user_auth_token": auth_token,
+        "pod_api_url": pod_api_url,
     }
 
     # 1. Create context on Ajentify
@@ -39,6 +54,7 @@ def handler(payload: HandlerPayload) -> CreateAgentContextResponse:
         json={
             "agent_id": agent_id,
             "prompt_args": prompt_args,
+            "user_defined": user_defined,
         },
     )
     if context_response.status_code != 200:

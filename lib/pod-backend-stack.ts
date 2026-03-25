@@ -110,10 +110,21 @@ export class PodBackendStack extends cdk.Stack {
     }));
 
     // API Gateway
-    new apigateway.LambdaRestApi(this, 'APIGateway', {
+    const api = new apigateway.LambdaRestApi(this, 'APIGateway', {
       handler: apiLambda,
       proxy: true,
     });
+
+    // Construct the URL from restApiId to avoid a circular dependency with the Stage
+    apiLambda.addEnvironment('POD_API_URL',
+      cdk.Fn.join('', [
+        'https://',
+        api.restApiId,
+        '.execute-api.',
+        this.region,
+        '.amazonaws.com/prod',
+      ])
+    );
 
     // RecycleMate Data Refresh Lambda (TypeScript, bundled with esbuild)
     const refreshDataLambda = new NodejsFunction(this, 'RefreshDataLambda', {

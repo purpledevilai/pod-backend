@@ -1,8 +1,12 @@
+from typing import Optional
 from pydantic import BaseModel
 from AWS.DynamoDB import get_item, put_item, update_item, get_all_items_by_index
 from uuid import uuid4
 from datetime import datetime
 from enum import Enum
+
+from Models.Council import Council, get_council_by_id
+from Models.BinSystem import BinSystem, get_bin_system_by_id
 
 USERS_TABLE = "users"
 
@@ -15,12 +19,47 @@ class PodConfiguration(str, Enum):
 class User(BaseModel):
     id: str
     email: str
+    name: Optional[str] = None
     council_id: str
     bin_system_id: str
     pod_configuration: str = PodConfiguration.NONE.value
     points: int
     created_at: int
     updated_at: int
+
+class UserResolved(BaseModel):
+    id: str
+    email: str
+    name: Optional[str] = None
+    council: Council
+    bin_system: BinSystem
+    pod_configuration: str
+    points: int
+    created_at: int
+    updated_at: int
+
+
+def resolve_user(user: User) -> UserResolved:
+    council = get_council_by_id(user.council_id)
+    if not council:
+        raise Exception(f"Council not found: {user.council_id}", 404)
+
+    bin_system = get_bin_system_by_id(user.bin_system_id)
+    if not bin_system:
+        raise Exception(f"Bin system not found: {user.bin_system_id}", 404)
+
+    return UserResolved(
+        id=user.id,
+        email=user.email,
+        name=user.name,
+        council=council,
+        bin_system=bin_system,
+        pod_configuration=user.pod_configuration,
+        points=user.points,
+        created_at=user.created_at,
+        updated_at=user.updated_at,
+    )
+
 
 class CreateUserParams(BaseModel):
     email: str
@@ -78,11 +117,3 @@ def get_user_with_id(user_id: str) -> User | None:
     if not response:
         return None
     return User(**response)
-    
-
-
-
-
-    
-
-    
