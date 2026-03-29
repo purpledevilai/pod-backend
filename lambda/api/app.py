@@ -17,7 +17,7 @@ import RequestHandlers.Users.create_user
 import RequestHandlers.Users.get_user
 import RequestHandlers.Users.update_user
 import RequestHandlers.Agent.create_agent_context
-import RequestHandlers.Agent.set_user_name
+import RequestHandlers.Users.set_user_name
 
 
 # Load secrets
@@ -79,7 +79,7 @@ handler_registry = {
     },
     "/set-user-name": {
         "POST": {
-            "handler": RequestHandlers.Agent.set_user_name.handler,
+            "handler": RequestHandlers.Users.set_user_name.handler,
             "public": False
         }
     }

@@ -1,6 +1,6 @@
 from typing import Optional
 from pydantic import BaseModel
-from AWS.DynamoDB import get_item, put_item, update_item, get_all_items_by_index
+from AWS.DynamoDB import get_item, put_item, update_item, delete_item, get_all_items_by_index
 from uuid import uuid4
 from datetime import datetime
 from enum import Enum
@@ -117,3 +117,6 @@ def get_user_with_id(user_id: str) -> User | None:
     if not response:
         return None
     return User(**response)
+
+def delete_user(user_id: str) -> None:
+    delete_item(USERS_TABLE, "id", user_id)
