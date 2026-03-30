@@ -18,6 +18,7 @@ import RequestHandlers.Users.get_user
 import RequestHandlers.Users.update_user
 import RequestHandlers.Agent.create_agent_context
 import RequestHandlers.Users.set_user_name
+import RequestHandlers.Users.set_pod_bin_preferences
 
 
 # Load secrets
@@ -80,6 +81,12 @@ handler_registry = {
     "/set-user-name": {
         "POST": {
             "handler": RequestHandlers.Users.set_user_name.handler,
+            "public": False
+        }
+    },
+    "/set-pod-bin-preferences": {
+        "POST": {
+            "handler": RequestHandlers.Users.set_pod_bin_preferences.handler,
             "public": False
         }
     }

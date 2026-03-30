@@ -23,6 +23,7 @@ class User(BaseModel):
     council_id: str
     bin_system_id: str
     pod_configuration: str = PodConfiguration.NONE.value
+    pod_bin_preferences: Optional[dict] = None
     points: int
     created_at: int
     updated_at: int
@@ -34,6 +35,7 @@ class UserResolved(BaseModel):
     council: Council
     bin_system: BinSystem
     pod_configuration: str
+    pod_bin_preferences: Optional[dict] = None
     points: int
     created_at: int
     updated_at: int
@@ -55,6 +57,7 @@ def resolve_user(user: User) -> UserResolved:
         council=council,
         bin_system=bin_system,
         pod_configuration=user.pod_configuration,
+        pod_bin_preferences=user.pod_bin_preferences,
         points=user.points,
         created_at=user.created_at,
         updated_at=user.updated_at,
