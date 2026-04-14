@@ -509,3 +509,14 @@ def make_user_data(
     if pod_bin_preferences is not None:
         data["pod_bin_preferences"] = pod_bin_preferences
     return json.dumps(data)
+
+
+def make_target_args(user_data_str: str):
+    """Build prompt_args and user_defined dicts for a TargetContext.
+
+    Returns (prompt_args, user_defined) tuple.
+    """
+    return (
+        {"ARG_USER_DATA": user_data_str},
+        {"user_data": user_data_str},
+    )

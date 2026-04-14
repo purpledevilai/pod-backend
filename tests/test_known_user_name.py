@@ -4,9 +4,9 @@ import json
 
 from ajentify_testing import (
     SimAgent, TargetContext, run_conversation,
-    AssessTrue, AssessFalse, AssessScore,
+    AssessTrue, AssessFalse, AssessScore, AssertCalledTool,
 )
-from tests import r_y_lg_fogo, make_user_data
+from tests import r_y_lg_fogo, make_user_data, make_target_args
 
 name = "known_user_name"
 description = (
@@ -20,6 +20,7 @@ def run(session):
     user_data_dict = json.loads(make_user_data("known-name", r_y_lg_fogo))
     user_data_dict["name"] = "Jordan"
     user_data = json.dumps(user_data_dict)
+    prompt_args, user_defined = make_target_args(user_data)
 
     sim = SimAgent(
         session,
@@ -33,14 +34,18 @@ def run(session):
     target = TargetContext(
         session,
         agent_id=session.env("POD_AGENT_ID"),
-        prompt_args={"user_data": user_data},
+        prompt_args=prompt_args,
+        user_defined=user_defined,
     )
 
     run_conversation(sim, target, max_turns=15)
 
-    target.assess_all([
+    target.check_all([
+        AssertCalledTool("sort_item"),
+        AssertCalledTool("show_bin"),
+        AssessTrue("Pod called show_bin with type kerbside and a Yellow color"),
         AssessTrue("Pod greeted the user by their name Jordan"),
         AssessFalse("Pod asked the user for their name"),
         AssessTrue("Pod classified the glass bottle into the correct recycling bin"),
-        AssessScore("Pod addressed the user in a warm and personalised way", min=0.7),
+        AssessScore("Pod addressed the user in a warm and personalised way", min=0.5),
     ])

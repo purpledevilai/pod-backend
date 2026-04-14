@@ -2,9 +2,9 @@
 
 from ajentify_testing import (
     SimAgent, TargetContext, run_conversation,
-    AssessTrue, AssessFalse, AssessScore,
+    AssessTrue, AssessScore, AssertNotCalledTool,
 )
-from tests import r_nogo_y, make_user_data
+from tests import r_nogo_y, make_user_data, make_target_args
 
 name = "nogo_garden"
 description = (
@@ -26,16 +26,20 @@ def run(session):
         first_message="Hi, I've got some tree branches — which bin should they go in?",
     )
 
+    user_data = make_user_data("nogo-garden", r_nogo_y)
+    prompt_args, user_defined = make_target_args(user_data)
+
     target = TargetContext(
         session,
         agent_id=session.env("POD_AGENT_ID"),
-        prompt_args={"user_data": make_user_data("nogo-garden", r_nogo_y)},
+        prompt_args=prompt_args,
+        user_defined=user_defined,
     )
 
     run_conversation(sim, target, max_turns=15)
 
-    target.assess_all([
-        AssessFalse("Pod called the show_bin_classification tool for the tree branches"),
+    target.check_all([
+        AssertNotCalledTool("show_bin"),
         AssessTrue("Pod acknowledged that no bin accepts garden waste in this system"),
         AssessTrue(
             "Pod suggested an alternative for the tree branches such as a transfer station, "

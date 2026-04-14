@@ -7,9 +7,9 @@ Pod should recommend the yellow Pod bin for a plastic bottle — not kerbside la
 
 from ajentify_testing import (
     SimAgent, TargetContext, run_conversation,
-    AssessTrue, AssessFalse, AssessScore,
+    AssessTrue, AssessFalse, AssessScore, AssertCalledTool,
 )
-from tests import r_y_lg_fogo, make_user_data
+from tests import r_y_lg_fogo, make_user_data, make_target_args
 
 name = "pod_bin_std_prefs_set"
 description = (
@@ -37,23 +37,27 @@ def run(session):
         first_message="Hi, I have a plastic water bottle — which Pod bin does it go in?",
     )
 
+    user_data = make_user_data(
+        "pod-std-prefs",
+        r_y_lg_fogo,
+        pod_configuration="freestanding",
+        pod_bin_preferences=POD_BIN_PREFS,
+    )
+    prompt_args, user_defined = make_target_args(user_data)
+
     target = TargetContext(
         session,
         agent_id=session.env("POD_AGENT_ID"),
-        prompt_args={
-            "user_data": make_user_data(
-                "pod-std-prefs",
-                r_y_lg_fogo,
-                pod_configuration="freestanding",
-                pod_bin_preferences=POD_BIN_PREFS,
-            )
-        },
+        prompt_args=prompt_args,
+        user_defined=user_defined,
     )
 
     run_conversation(sim, target, max_turns=15)
 
-    target.assess_all([
-        AssessTrue("Pod called show_bin_classification with the Yellow bin appearance"),
+    target.check_all([
+        AssertCalledTool("sort_item"),
+        AssertCalledTool("show_bin"),
+        AssessTrue("Pod called show_bin with type pod and a yellow color"),
         AssessTrue("Pod recommended the yellow Pod bin for the plastic water bottle"),
         AssessFalse("Pod's primary bin recommendation was a kerbside bin rather than a Pod bin (Pod may mention the kerbside destination as context, but the primary recommendation must be the Pod bin)"),
         AssessTrue("Pod provided educational content about recycling or the circular economy"),

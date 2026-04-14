@@ -2,9 +2,9 @@
 
 from ajentify_testing import (
     SimAgent, TargetContext, run_conversation,
-    AssessTrue, AssessFalse, AssessScore,
+    AssessTrue, AssessFalse, AssessScore, AssertCalledTool,
 )
-from tests import r_y_b_lg_fogo, make_user_data
+from tests import r_y_b_lg_fogo, make_user_data, make_target_args
 
 name = "split_recycling_cardboard"
 description = (
@@ -27,16 +27,22 @@ def run(session):
         first_message="Hey, I've got a big cardboard box — which bin does it go in?",
     )
 
+    user_data = make_user_data("split-cardboard", r_y_b_lg_fogo)
+    prompt_args, user_defined = make_target_args(user_data)
+
     target = TargetContext(
         session,
         agent_id=session.env("POD_AGENT_ID"),
-        prompt_args={"user_data": make_user_data("split-cardboard", r_y_b_lg_fogo)},
+        prompt_args=prompt_args,
+        user_defined=user_defined,
     )
 
     run_conversation(sim, target, max_turns=15)
 
-    target.assess_all([
-        AssessTrue("Pod called show_bin_classification with the Blue bin appearance"),
+    target.check_all([
+        AssertCalledTool("sort_item"),
+        AssertCalledTool("show_bin"),
+        AssessTrue("Pod called show_bin with type kerbside and a Blue color"),
         AssessTrue("Pod classified the cardboard box into the Blue Recycling bin"),
         AssessFalse("Directed the user to the Yellow Recycling bin for the cardboard box"),
         AssessTrue("Pod provided educational content about recycling or the circular economy"),

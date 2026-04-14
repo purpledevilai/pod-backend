@@ -2,9 +2,9 @@
 
 from ajentify_testing import (
     SimAgent, TargetContext, run_conversation,
-    AssessTrue, AssessScore,
+    AssessTrue, AssessScore, AssertCalledTool,
 )
-from tests import bag_system, make_user_data
+from tests import bag_system, make_user_data, make_target_args
 
 name = "bag_system"
 description = (
@@ -27,16 +27,22 @@ def run(session):
         first_message="Hey, I have an empty aluminium can — where does it go?",
     )
 
+    user_data = make_user_data("bag-system", bag_system)
+    prompt_args, user_defined = make_target_args(user_data)
+
     target = TargetContext(
         session,
         agent_id=session.env("POD_AGENT_ID"),
-        prompt_args={"user_data": make_user_data("bag-system", bag_system)},
+        prompt_args=prompt_args,
+        user_defined=user_defined,
     )
 
     run_conversation(sim, target, max_turns=15)
 
-    target.assess_all([
-        AssessTrue("Pod called show_bin_classification with the Clear/Red bag appearance"),
+    target.check_all([
+        AssertCalledTool("sort_item"),
+        AssertCalledTool("show_bin"),
+        AssessTrue("Pod called show_bin with type kerbside and a Clear/Red color"),
         AssessTrue(
             "Directed the user to the Clear/Red Recycling bag for the aluminium can, "
             "correctly referencing the non-standard bag appearance"

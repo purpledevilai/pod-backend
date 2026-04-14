@@ -37,13 +37,16 @@ def handler(payload: HandlerPayload) -> CreateAgentContextResponse:
 
     resolved_user = resolve_user(user)
 
+    user_data_json = json.dumps(resolved_user.model_dump())
+
     prompt_args = {
-        "user_data": json.dumps(resolved_user.model_dump()),
+        "ARG_USER_DATA": user_data_json,
     }
 
     user_defined = {
         "user_auth_token": auth_token,
         "pod_api_url": pod_api_url,
+        "user_data": user_data_json,
     }
 
     # 1. Create context on Ajentify

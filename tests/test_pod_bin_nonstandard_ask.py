@@ -91,10 +91,11 @@ def run(session):
         target = TargetContext(
             session,
             agent_id=session.env("POD_AGENT_ID"),
-            prompt_args={"user_data": user_data},
+            prompt_args={"ARG_USER_DATA": user_data},
             user_defined={
                 "user_auth_token": f"Bearer {access_token}",
                 "pod_api_url": session.env("POD_API_URL"),
+                "user_data": user_data,
             },
         )
 
