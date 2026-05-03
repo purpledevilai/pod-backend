@@ -1,0 +1,108 @@
+{
+  "$schema": "https://api.ajentify.com/docs/manifest-schema.json",
+  "agents": {
+    "gpt_5_2": {
+      "name": "Preamble Test (gpt-5.2)",
+      "description": "Sandbox agent for testing tool-preamble behaviour on gpt-5.2.",
+      "prompt_file": "preamble_test/prompt.txt",
+      "is_public": false,
+      "agent_speaks_first": false,
+      "tools": ["pt_classify", "pt_show_bin", "pt_reward_points"],
+      "uses_prompt_args": false,
+      "model_id": "gpt-5.2"
+    },
+    "gpt_5_2_codex": {
+      "name": "Preamble Test (gpt-5.2-codex)",
+      "description": "Sandbox agent for testing tool-preamble behaviour on gpt-5.2-codex.",
+      "prompt_file": "preamble_test/prompt.txt",
+      "is_public": false,
+      "agent_speaks_first": false,
+      "tools": ["pt_classify", "pt_show_bin", "pt_reward_points"],
+      "uses_prompt_args": false,
+      "model_id": "gpt-5.2-codex"
+    },
+    "claude_sonnet_4_6": {
+      "name": "Preamble Test (claude-sonnet-4-6)",
+      "description": "Sandbox agent for testing tool-preamble behaviour on claude-sonnet-4-6.",
+      "prompt_file": "preamble_test/prompt.txt",
+      "is_public": false,
+      "agent_speaks_first": false,
+      "tools": ["pt_classify", "pt_show_bin", "pt_reward_points"],
+      "uses_prompt_args": false,
+      "model_id": "claude-sonnet-4-6"
+    },
+    "claude_opus_4_6": {
+      "name": "Preamble Test (claude-opus-4-6)",
+      "description": "Sandbox agent for testing tool-preamble behaviour on claude-opus-4-6.",
+      "prompt_file": "preamble_test/prompt.txt",
+      "is_public": false,
+      "agent_speaks_first": false,
+      "tools": ["pt_classify", "pt_show_bin", "pt_reward_points"],
+      "uses_prompt_args": false,
+      "model_id": "claude-opus-4-6"
+    }
+  },
+  "tools": {
+    "pt_classify": {
+      "name": "classify",
+      "description": "Classify a free-form item description into a bin colour. Returns {\"bin_color\": \"<colour>\"} for items that fit a kerbside bin (e.g. \"Yellow\", \"Red\", \"Lime Green\"), or {\"bin_color\": null} for items that don't (e.g. tree branches in a system without a green-waste bin). Call this once per component.",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "string",
+            "description": "Free-form description of the item being classified, e.g. 'cereal box', 'soft plastic liner', 'banana peel'."
+          }
+        },
+        "required": ["item"]
+      },
+      "code_file": "preamble_test/tools/classify.py",
+      "pass_context": false,
+      "is_async": false,
+      "is_client_side_tool": false
+    },
+    "pt_show_bin": {
+      "name": "show_bin",
+      "description": "Display a coloured bin tile to the user. Call this after classify, in the response where you tell the user which bin to use.",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+          "color": {
+            "type": "string",
+            "description": "The bin colour to display, e.g. 'Yellow', 'Red', 'Lime Green'."
+          }
+        },
+        "required": ["color"]
+      },
+      "code_file": "preamble_test/tools/show_bin.py",
+      "pass_context": false,
+      "is_async": false,
+      "is_client_side_tool": false
+    },
+    "pt_reward_points": {
+      "name": "reward_points",
+      "description": "Award the user points for a correctly classified component. Returns {\"points\": <new_total>}. Call exactly once per show_bin call — never twice for the same component.",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "integer",
+            "description": "Points to award. Use 5 for a single correct classification."
+          }
+        },
+        "required": ["points"]
+      },
+      "code_file": "preamble_test/tools/reward_points.py",
+      "pass_context": false,
+      "is_async": false,
+      "is_client_side_tool": false
+    }
+  },
+  "sres": {}
+}

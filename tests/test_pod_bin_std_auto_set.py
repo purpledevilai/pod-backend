@@ -75,10 +75,11 @@ def run(session):
         sim = SimAgent(
             session,
             persona=(
-                "You have a Pod home bin system. You want to know which Pod bin to use "
-                "for a plastic water bottle. Respond naturally. If Pod asks you any setup "
-                "questions about your bins, answer them. Call end_test once you have received "
-                "a clear bin recommendation."
+            "You have a Pod home bin system. You want to know which Pod bin to use "
+            "for a plastic water bottle. Respond naturally. If Pod asks you any setup "
+            "questions about your bins, answer them. Call end_test ONLY once Pod has "
+            "BOTH told you which Pod bin AND told you how many points you earned for "
+            "the classification — not before."
             ),
             first_message="Hi, I need to throw away a plastic water bottle — which bin does it go in?",
         )
@@ -98,6 +99,7 @@ def run(session):
 
         target.check_all([
             AssertCalledTool("set_pod_bin_preferences"),
+            AssertCalledTool("show_bin", with_params={"show_reward": True, "points": 5}),
             AssessTrue("Pod called set_pod_bin_preferences to save the bin preference configuration"),
             AssessTrue("Pod recommended the yellow Pod bin for the plastic water bottle"),
             AssessFalse("Pod asked the user questions about how to configure their Pod bins"),

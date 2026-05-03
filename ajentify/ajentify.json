@@ -1,0 +1,182 @@
+{
+    "$schema": "https://api.ajentify.com/docs/manifest-schema.json",
+    "agents": {
+      "pod": {
+        "name": "Pod",
+        "description": "Waste classification agent",
+        "prompt_file": "pod_prompt.txt",
+        "is_public": false,
+        "agent_speaks_first": true,
+        "tools": [
+          "show_arl_and_ric",
+          "show_bin",
+          "set_user_name",
+          "set_pod_bin_preferences",
+          "sort_item"
+        ],
+        "uses_prompt_args": true,
+        "prompt_arg_names": [
+          "ARG_USER_DATA"
+        ],
+        "voice_id": "LtPsVjX1k0Kl4StEMZPK",
+        "initialize_tool_id": null,
+        "model_id": "gpt-5.2"
+      }
+    },
+    "tools": {
+      "show_arl_and_ric": {
+        "name": "show_arl_and_ric",
+        "description": "Use this tool to show the users examples of what ARL (Australian Recycling Labels) and RIC (Resin Identification Code) labels look like",
+        "input_schema": null,
+        "code_file": "tools/show_arl_and_ric.py",
+        "pass_context": false,
+        "is_async": false,
+        "is_client_side_tool": false
+      },
+      "sort_item": {
+        "name": "sort_item",
+        "description": "After classifying an item into one of the 7 material categories, call this tool to programmatically determine which kerbside bin accepts that material based on the user's council bin system. Returns the matching kerbside bin type and appearance, or indicates no bin was found.",
+        "input_schema": {
+          "additionalProperties": false,
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "classification": {
+              "type": "string",
+              "description": "The material category of the item to sort. Must be one of the 7 item categories.",
+              "enum": [
+                "cardboard",
+                "container",
+                "food",
+                "garbage",
+                "garden",
+                "glass",
+                "soft_plastic"
+              ]
+            }
+          },
+          "required": [
+            "classification"
+          ]
+        },
+        "code_file": "tools/sort_item.py",
+        "pass_context": true,
+        "is_async": false,
+        "is_client_side_tool": false
+      },
+      "set_user_name": {
+        "name": "set_user_name",
+        "description": "Save the user's name so you can remember it across conversations. Call this when the user tells you their name for the first time.",
+        "input_schema": {
+          "additionalProperties": false,
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "The user's name as they told it to you"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        },
+        "code_file": "tools/set_user_name.py",
+        "pass_context": true,
+        "is_async": false,
+        "is_client_side_tool": false
+      },
+      "show_bin": {
+        "name": "show_bin",
+        "description": "Display one or more bins to the user AND optionally award points for a correctly-classified item. Always call this exactly ONCE per classification event (one user question about where an item goes). The UI plays the bins in array order, then — if show_reward is true and points > 0 — shows a points reward panel. Set show_reward=true and points = 5 \u00d7 (number of correctly-classified components) for genuine classifications. Set show_reward=false and points=0 for re-asks of items already classified earlier in this conversation, informational lookups (\"what does my yellow bin look like?\"), or setup demonstrations.",
+        "input_schema": {
+          "additionalProperties": false,
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "bins": {
+              "type": "array",
+              "description": "Ordered list of bins to show. Must contain at least one entry. Use one entry per UNIQUE destination bin: if two components of the same item both go to the Yellow bin, that is ONE entry, not two.",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "description": "Whether this is a council kerbside bin or a Pod home bin.",
+                    "enum": ["kerbside", "pod"]
+                  },
+                  "color": {
+                    "type": "string",
+                    "description": "The bin colour / appearance (e.g. \"Red\", \"Yellow\", \"Lime Green\", \"Purple\", \"Clear/Red\")."
+                  }
+                },
+                "required": ["type", "color"]
+              }
+            },
+            "show_reward": {
+              "type": "boolean",
+              "description": "True for a genuine classification (the user asked where an item goes and got a correct bin). False for re-asks of items already classified in this conversation, informational lookups, or setup demonstrations."
+            },
+            "points": {
+              "type": "integer",
+              "description": "Points to award. Must be a non-negative integer. When show_reward is true: 5 \u00d7 (number of correctly-classified components in this event). When show_reward is false: must be 0."
+            }
+          },
+          "required": ["bins", "show_reward", "points"]
+        },
+        "code_file": "tools/show_bin.py",
+        "pass_context": true,
+        "is_async": false,
+        "is_client_side_tool": false
+      },
+      "set_pod_bin_preferences": {
+        "name": "set_pod_bin_preferences",
+        "description": "Save the user's Pod bin preference configuration — how they want to use each Pod bin colour and which kerbside bin each maps to. Call this tool once you have gathered enough information to build the full mapping, or when you can infer it automatically from the user's bin system.",
+        "input_schema": {
+          "additionalProperties": false,
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "pod_bin_preferences": {
+              "description": "Mapping of Pod bin colours to plain-English descriptions of what each bin is used for and which kerbside bin it ultimately maps to",
+              "additionalProperties": false,
+              "type": "object",
+              "properties": {
+                "red": {
+                  "type": "string",
+                  "description": "How the red Pod bin is used and which kerbside bin it maps to"
+                },
+                "yellow": {
+                  "type": "string",
+                  "description": "How the yellow Pod bin is used and which kerbside bin it maps to"
+                },
+                "green": {
+                  "type": "string",
+                  "description": "How the green Pod bin is used and which kerbside bin it maps to"
+                },
+                "white": {
+                  "type": "string",
+                  "description": "How the white soft plastics slot is used and where those plastics ultimately go (include only if the user has this slot and it is applicable)"
+                }
+              },
+              "required": [
+                "red",
+                "yellow",
+                "green",
+                "white"
+              ]
+            }
+          },
+          "required": [
+            "pod_bin_preferences"
+          ]
+        },
+        "code_file": "tools/set_pod_bin_preferences.py",
+        "pass_context": true,
+        "is_async": false,
+        "is_client_side_tool": false
+      }
+    },
+    "sres": {}
+  }

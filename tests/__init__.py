@@ -411,6 +411,64 @@ no_recycling_system = {
     ],
 }
 
+r_y_g_m_food = {
+    "id": "84",
+    "bins": [
+        {
+            "id": "84-red-garbage",
+            "type": "Garbage",
+            "appearance": "Red",
+            "acceptsGarbage": True,
+            "acceptsSoftPlastics": True,
+            "acceptsCardboard": False,
+            "acceptsContainers": False,
+            "acceptsFood": False,
+            "acceptsGarden": False,
+            "acceptsGlass": False,
+            "extras": [],
+        },
+        {
+            "id": "84-yellow-recycling",
+            "type": "Recycling",
+            "appearance": "Yellow",
+            "acceptsGarbage": False,
+            "acceptsSoftPlastics": False,
+            "acceptsCardboard": True,
+            "acceptsContainers": True,
+            "acceptsFood": False,
+            "acceptsGarden": False,
+            "acceptsGlass": True,
+            "extras": [],
+        },
+        {
+            "id": "84-green-garden-waste",
+            "type": "Garden Waste",
+            "appearance": "Green",
+            "acceptsGarbage": False,
+            "acceptsSoftPlastics": False,
+            "acceptsCardboard": False,
+            "acceptsContainers": False,
+            "acceptsFood": False,
+            "acceptsGarden": True,
+            "acceptsGlass": False,
+            "extras": [],
+        },
+        {
+            "id": "84-maroon-food-waste",
+            "type": "Food Waste",
+            "appearance": "Maroon",
+            "acceptsGarbage": False,
+            "acceptsSoftPlastics": False,
+            "acceptsCardboard": False,
+            "acceptsContainers": False,
+            "acceptsFood": True,
+            "acceptsGarden": False,
+            "acceptsGlass": False,
+            "extras": [],
+        },
+    ],
+}
+
 bag_system = {
     "id": "80",
     "bins": [
@@ -472,6 +530,7 @@ COUNCILS = {
     "60": {"id": "440", "name": "Moira Shire Council"},
     "23": {"id": "344", "name": "Mosman Council"},
     "111": {"id": "464", "name": "Alpine Shire Council"},
+    "84": {"id": "392", "name": "City of Sydney"},
     "87": {"id": "485", "mapId": "200", "name": "Hume City Council"},
     "80": {"id": "546", "mapId": "250", "name": "Mt Buller Mt Stirling Alpine Resort"},
 }
@@ -495,10 +554,17 @@ def make_user_data(
         name: optional user name
         pod_configuration: "none" | "freestanding" | "in_drawer" | "under_sink"
         pod_bin_preferences: optional Pod bin preference mapping dict
+
+    Note: ``slug`` is kept for call-site readability but is *not* interpolated
+    into ``id``/``email``. Earlier we used it to make per-test user IDs like
+    ``eval-user-fogo-chipbag``, but that leaked the test scenario into the
+    persona — Pod's LLM occasionally inferred user intent from the slug
+    (e.g. classifying a chip bag before the user said anything). Generic
+    fixtures keep the persona neutral.
     """
     data: dict = {
-        "id": f"eval-user-{slug}",
-        "email": f"eval-{slug}@test.com",
+        "id": "eval-user",
+        "email": "eval@test.com",
         "council": COUNCILS[bin_sys["id"]],
         "bin_system": bin_sys,
         "pod_configuration": pod_configuration,

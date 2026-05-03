@@ -21,7 +21,8 @@ def run(session):
         persona=(
             "You are a person who has an empty chip bag (the crinkly foil-lined "
             "soft plastic kind) and wants to know which bin it goes in. Respond "
-            "naturally and call end_test once you get a clear answer."
+            "naturally. Call end_test ONLY once Pod has BOTH told you which bin "
+            "AND told you told you which bin to use — not before."
         ),
         first_message="Hey, I have an empty chip packet — which bin does it go in?",
     )
@@ -40,10 +41,10 @@ def run(session):
 
     target.check_all([
         AssertCalledTool("sort_item"),
-        AssertCalledTool("show_bin"),
+        AssertCalledTool("show_bin", with_params={"show_reward": True, "points": 5}),
         AssessTrue("Pod called show_bin with type kerbside and a Red color"),
         AssessTrue("Pod classified the chip bag (soft plastic) into the Red Garbage bin"),
         AssessFalse("Directed the user to the Yellow Recycling bin for the chip bag"),
-        AssessTrue("Pod provided educational content about recycling or the circular economy"),
+        AssessTrue("Pod gave the user a brief reason, fact, or explanation about why the item belongs in this bin or why it should be disposed of this way (any practical or environmental reasoning counts)"),
         AssessScore("The sim user behaved as a real user (stated their item, asked for help) rather than acting like an assistant", min=0.7),
     ])

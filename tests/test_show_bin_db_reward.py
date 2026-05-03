@@ -1,4 +1,11 @@
-"""End-to-end: Pod doesn't know the user's name, asks for it, user tells it, set_user_name tool is called."""
+"""End-to-end: a single classification fires show_bin with show_reward=true / points=5,
+which causes the show_bin tool to call /reward-points and increment the user's row in
+DynamoDB from 0 to 5.
+
+Mirrors the test_set_user_name.py pattern — creates a real user with points=0, signs a
+JWT so show_bin's HTTP call to /reward-points authenticates, runs a single classification
+conversation, then asserts the DynamoDB row's points field went from 0 to 5.
+"""
 
 import json
 import boto3
@@ -12,13 +19,12 @@ from ajentify_testing import (
 )
 from tests import r_y_lg_fogo, COUNCILS
 
-name = "set_user_name"
+name = "show_bin_db_reward"
 description = (
-    "Pod doesn't know the user's name (name is null in user_data). "
-    "Pod should ask for the user's name during the greeting. "
-    "When the user provides their name, Pod should call the set_user_name "
-    "tool to persist it. This test creates a real test user and auth token "
-    "so the tool can make an authenticated call to the backend."
+    "Real-DB integration test for show_bin's reward path and the /reward-points endpoint. "
+    "Creates a user with points=0, runs a single classification (water bottle → Yellow), "
+    "asserts show_bin was called with show_reward=true and points=5, then asserts the "
+    "user's points field in DynamoDB was incremented from 0 to exactly 5."
 )
 
 USERS_TABLE = "users"
@@ -37,6 +43,7 @@ def run(session):
     table.put_item(Item={
         "id": user_id,
         "email": email,
+        "name": "Sam",
         "council_id": council["id"],
         "bin_system_id": r_y_lg_fogo["id"],
         "pod_configuration": "none",
@@ -59,7 +66,7 @@ def run(session):
         user_data = json.dumps({
             "id": user_id,
             "email": email,
-            "name": None,
+            "name": "Sam",
             "council": council,
             "bin_system": r_y_lg_fogo,
             "pod_configuration": "none",
@@ -69,15 +76,12 @@ def run(session):
         sim = SimAgent(
             session,
             persona=(
-                "You are Alex. You want help figuring out which bin to use for an empty "
-                "plastic water bottle (just the bottle on its own — no wrapper, no label, "
-                "no cap, just the bottle). "
-                "When Pod greets you and asks your name, tell it your name is Alex. "
-                "After that, ask about the empty plastic water bottle. "
-                "If Pod asks anything about wrappers, labels, or caps, tell it there are none. "
-                "Call end_test ONLY once Pod has told you which bin to use — not before."
+                "You are Sam. You have an empty plastic water bottle and want to "
+                "know which bin it goes in. Respond naturally and BRIEFLY. Do NOT "
+                "give recycling advice yourself; you are the USER. Call end_test "
+                "ONLY once Pod has told you which bin to use — not before."
             ),
-            first_message="Hey!",
+            first_message="Hi, I have an empty plastic water bottle — which bin does it go in?",
         )
 
         target = TargetContext(
@@ -91,12 +95,17 @@ def run(session):
             },
         )
 
-        run_conversation(sim, target, max_turns=20)
+        run_conversation(sim, target, max_turns=15)
 
         target.check_all([
-            AssertCalledTool("set_user_name", with_params={"name": "Alex"}),
             AssertCalledTool("show_bin", with_params={"show_reward": True, "points": 5}),
         ])
+
+        # Real DB integration assertion: show_bin → /reward-points → DynamoDB.
+        refreshed = table.get_item(Key={"id": user_id})["Item"]
+        assert int(refreshed["points"]) == 5, (
+            f"Expected points to be 5 after one classification, got {refreshed['points']}"
+        )
 
     finally:
         table.delete_item(Key={"id": user_id})

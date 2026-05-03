@@ -20,8 +20,12 @@ def run(session):
         persona=(
             "You are a normal person who needs help figuring out which bin "
             "to put a plastic water bottle in. You have a standard 3-bin "
-            "system. Respond naturally and call end_test once you get a "
-            "clear bin classification."
+            "system. Respond naturally and BRIEFLY — short replies only, like "
+            "a real user texting. Do NOT give any recycling advice yourself. "
+            "Do NOT explain anything to Pod. You are the USER, not the assistant; "
+            "keep the assistant role to Pod entirely. Call end_test ONLY once Pod "
+            "has BOTH told you which bin AND told you how many points you earned "
+            "for the classification — not before."
         ),
         first_message="Hi, I have a plastic water bottle — which bin does it go in?",
     )
@@ -40,9 +44,9 @@ def run(session):
 
     target.check_all([
         AssertCalledTool("sort_item"),
-        AssertCalledTool("show_bin"),
+        AssertCalledTool("show_bin", with_params={"show_reward": True, "points": 5}),
         AssessTrue("Pod called show_bin with type kerbside and a Yellow color"),
         AssessTrue("Pod classified the plastic water bottle into the Yellow Recycling bin"),
-        AssessTrue("Pod provided educational content about recycling or the circular economy"),
+        AssessTrue("Pod gave the user a brief reason, fact, or explanation about why the item belongs in this bin or why it should be disposed of this way (any practical or environmental reasoning counts)"),
         AssessScore("The sim user behaved as a real user (stated their item, asked for help) rather than acting like an assistant", min=0.7),
     ])

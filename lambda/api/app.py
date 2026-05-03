@@ -17,6 +17,7 @@ import RequestHandlers.Users.create_user
 import RequestHandlers.Users.get_user
 import RequestHandlers.Users.update_user
 import RequestHandlers.Agent.create_agent_context
+import RequestHandlers.Agent.reward_points
 import RequestHandlers.Users.set_user_name
 import RequestHandlers.Users.set_pod_bin_preferences
 
@@ -87,6 +88,12 @@ handler_registry = {
     "/set-pod-bin-preferences": {
         "POST": {
             "handler": RequestHandlers.Users.set_pod_bin_preferences.handler,
+            "public": False
+        }
+    },
+    "/reward-points": {
+        "POST": {
+            "handler": RequestHandlers.Agent.reward_points.handler,
             "public": False
         }
     }

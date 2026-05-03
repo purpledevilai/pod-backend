@@ -44,6 +44,9 @@ def handler(payload: HandlerPayload) -> UpdateUserResponse:
             raise Exception(f"Bin system not found: {body.bin_system_id}", 404)
         update_attrs["bin_system_id"] = body.bin_system_id
 
+        if body.bin_system_id != user.bin_system_id:
+            update_attrs["pod_bin_preferences"] = None
+
     if body.pod_configuration is not None:
         valid_values = [e.value for e in PodConfiguration]
         if body.pod_configuration not in valid_values:

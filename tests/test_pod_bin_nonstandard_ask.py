@@ -83,7 +83,8 @@ def run(session):
                 "When Pod asks about your Pod bin setup, tell it: "
                 "you want to use your red Pod bin for garbage and your yellow Pod bin for recycling. "
                 "After Pod has set up your bins, ask it which Pod bin to use for a banana peel. "
-                "Call end_test once you have received a clear bin recommendation."
+                "Call end_test ONLY once Pod has BOTH told you which Pod bin for the banana peel "
+                "AND told you told you which bin to use — not before."
             ),
             first_message="Hi, I have a Pod bin system and need some help setting it up.",
         )
@@ -103,6 +104,7 @@ def run(session):
 
         target.check_all([
             AssertCalledTool("set_pod_bin_preferences"),
+            AssertCalledTool("show_bin", with_params={"show_reward": True, "points": 5}),
             AssessTrue(
                 "Pod engaged in conversation to understand how the user wants to configure "
                 "their Pod bins, either by asking directly or by indicating it would help "

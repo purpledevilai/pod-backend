@@ -26,7 +26,9 @@ def run(session):
         session,
         persona=(
             "You are Jordan. You want to know which bin to put a glass bottle in. "
-            "Respond naturally and call end_test once you get a clear bin classification."
+            "Respond naturally. Call end_test ONLY once Pod has BOTH told you "
+            "which bin AND told you how many points you earned for the "
+            "classification — not before."
         ),
         first_message="Hi, I have a glass bottle — which bin does it go in?",
     )
@@ -42,9 +44,11 @@ def run(session):
 
     target.check_all([
         AssertCalledTool("sort_item"),
-        AssertCalledTool("show_bin"),
+        AssertCalledTool("show_bin", with_params={"show_reward": True, "points": 5}),
         AssessTrue("Pod called show_bin with type kerbside and a Yellow color"),
-        AssessTrue("Pod greeted the user by their name Jordan"),
+        AssessTrue("Pod's first message included the user's name 'Jordan' (i.e. Pod said 'Jordan' as a greeting to the user)"),
+        AssessTrue("Pod's opening message included the tagline 'Everything becomes something'"),
+        AssessTrue("Pod used the word 'recycle' (or 'recycling') and never the word 'sort' or 'sorting' in any user-facing message"),
         AssessFalse("Pod asked the user for their name"),
         AssessTrue("Pod classified the glass bottle into the correct recycling bin"),
         AssessScore("Pod addressed the user in a warm and personalised way", min=0.5),

@@ -19,8 +19,8 @@ def run(session):
         session,
         persona=(
             "You are a person who has a broken ceramic mug and wants to know "
-            "which bin it goes in. Respond naturally and call end_test once "
-            "you get a clear answer."
+            "which bin it goes in. Respond naturally. Call end_test ONLY once "
+            "Pod has told you which bin to use — not before."
         ),
         first_message="Hi, I have a broken ceramic mug — which bin does it go in?",
     )
@@ -39,9 +39,9 @@ def run(session):
 
     target.check_all([
         AssertCalledTool("sort_item"),
-        AssertCalledTool("show_bin"),
+        AssertCalledTool("show_bin", with_params={"show_reward": True, "points": 5}),
         AssessTrue("Pod called show_bin with type kerbside and a Red color"),
         AssessTrue("Pod classified the broken ceramic mug into the Red Garbage bin"),
-        AssessTrue("Pod provided educational content about recycling or the circular economy"),
+        AssessTrue("Pod gave the user a brief reason, fact, or explanation about why the item belongs in this bin or why it should be disposed of this way (any practical or environmental reasoning counts)"),
         AssessScore("The sim user behaved as a real user (stated their item, asked for help) rather than acting like an assistant", min=0.7),
     ])

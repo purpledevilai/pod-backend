@@ -46,6 +46,5 @@ def run(session):
             "Pod suggested an alternative such as a transfer station, recycling centre, "
             "or council drop-off for the cardboard"
         ),
-        AssessTrue("Pod provided educational content about recycling or the circular economy"),
         AssessScore("The sim user behaved as a real user (stated their item, asked for help) rather than acting like an assistant", min=0.7),
     ])

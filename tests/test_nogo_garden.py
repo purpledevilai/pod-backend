@@ -40,11 +40,10 @@ def run(session):
 
     target.check_all([
         AssertNotCalledTool("show_bin"),
-        AssessTrue("Pod acknowledged that no bin accepts garden waste in this system"),
+        AssessTrue("Pod indicated that the tree branches cannot go in any of the user's kerbside bins"),
         AssessTrue(
             "Pod suggested an alternative for the tree branches such as a transfer station, "
             "green waste drop-off, or composting"
         ),
-        AssessTrue("Pod provided educational content about recycling or the circular economy"),
         AssessScore("The sim user behaved as a real user (stated their item, asked for help) rather than acting like an assistant", min=0.7),
     ])

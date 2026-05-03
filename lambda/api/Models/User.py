@@ -99,6 +99,16 @@ def update_user(user_id: str, update_attributes: dict) -> User:
     )
     return User(**updated)
 
+def increment_user_points(user_id: str, delta: int) -> int:
+    """Add ``delta`` to the user's ``points`` and return the new total."""
+    user = get_user_with_id(user_id)
+    if not user:
+        raise Exception(f"User not found: {user_id}", 404)
+    new_total = user.points + delta
+    update_user(user_id, {"points": new_total})
+    return new_total
+
+
 def get_user_with_email(email: str) -> User | None:
     """
     Fetch a user by their email
